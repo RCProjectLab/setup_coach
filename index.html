@@ -1,0 +1,38 @@
+<!doctype html><html lang="de"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0f172a"><title>RC Setup Coach 3</title>
+<link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="icon.svg">
+<link rel="stylesheet" href="style.css"></head><body>
+<header><div><small>RC TOURENWAGEN</small><h1>RC Setup Coach 3</h1></div><button id="theme">◐</button></header>
+<main>
+<section id="home" class="view active">
+<div class="hero"><b>VERSION 3 · SETUP COACH</b><h2>Problem erkennen und Schritt für Schritt lösen</h2>
+<p>Konkrete Änderungen mit Erklärung, Durchführung, Test und Nebenwirkung.</p></div>
+<label class="search"><b>Suche</b><input id="search" type="search" placeholder="Rollzentrum, Ackermann, Untersteuern …"></label>
+<div class="context">
+<label>Belag<select id="surface"><option>ETS-Teppich</option><option>Asphalt</option></select></label>
+<label>Grip<select id="grip"><option>niedrig</option><option selected>mittel</option><option>hoch</option></select></label>
+<label>Temperatur<select id="temp"><option>kalt</option><option selected>normal</option><option>heiß</option></select></label>
+</div>
+<h2>Problemlöser</h2><div class="problems">
+<button data-diag="untersteuern"><b>Untersteuern</b><span>Auto schiebt vorne</span></button>
+<button data-diag="uebersteuern"><b>Übersteuern</b><span>Heck kommt</span></button>
+<button data-diag="nervoes"><b>Nervöse Lenkung</b><span>Zu hektisch</span></button>
+<button data-diag="snap"><b>Snap Oversteer</b><span>Plötzliches Ausbrechen</span></button>
+<button data-diag="traege"><b>Träges Einlenken</b><span>Zu langsame Reaktion</span></button>
+<button data-diag="hakelig"><b>Hakelige Rotation</b><span>Auto kippt an</span></button>
+</div>
+<div class="section-head"><h2>Setup-Lexikon</h2><select id="category"><option>Alle</option></select></div>
+<div id="topics" class="topics"></div>
+</section>
+<section id="detail" class="view"><button class="back">← Zurück</button><div id="detailContent"></div></section>
+<section id="favorites" class="view"><h2>Favoriten</h2><div id="favList" class="topics"></div></section>
+<section id="info" class="view"><div class="card"><h2>Über die App</h2>
+<p>Interaktiver RC-Tourenwagen Setup Coach auf Basis der RC-Fibel.</p>
+<p>Bei Rollzentrum-Verstellungen gilt in dieser App:</p>
+<ul><li>unten innen mehr Shims = Rollzentrum höher</li><li>unten innen weniger Shims = tiefer</li>
+<li>oben innen weniger Shims unter der Sturzstange = höher</li><li>oben innen mehr Shims = tiefer</li></ul>
+<p><b>Immer nur eine Änderung gleichzeitig testen.</b></p></div></section>
+</main>
+<nav><button data-nav="home">⌂<span>Start</span></button><button data-nav="favorites">★<span>Favoriten</span></button><button data-nav="info">ⓘ<span>Info</span></button></nav>
+<script src="data.js"></script><script src="app.js"></script></body></html>

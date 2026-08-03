@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+<rect width="512" height="512" rx="110" fill="#0f172a"/>
+<path d="M82 322h348l-30-104c-8-27-32-46-60-46H172c-28 0-52 19-60 46L82 322Z" fill="#0ea5e9"/>
+<path d="M137 277h238l-21-55c-4-11-15-19-27-19H185c-12 0-23 8-27 19l-21 55Z" fill="#e0f2fe"/>
+<circle cx="154" cy="334" r="45" fill="#020617"/><circle cx="358" cy="334" r="45" fill="#020617"/>
+<circle cx="154" cy="334" r="20" fill="#94a3b8"/><circle cx="358" cy="334" r="20" fill="#94a3b8"/>
+<text x="256" y="132" text-anchor="middle" font-family="Arial,sans-serif" font-size="72" font-weight="900" fill="white">RC</text>
+</svg>
