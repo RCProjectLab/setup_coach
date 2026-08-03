@@ -28,4 +28,19 @@ if(i)document.getElementById('prev').onclick=()=>{i--;draw()}}draw()}
 document.querySelectorAll('[data-diag]').forEach(b=>b.onclick=()=>diag(b.dataset.diag));
 document.getElementById('theme').onclick=()=>{document.documentElement.classList.toggle('dark');localStorage.setItem('rcv3theme',document.documentElement.classList.contains('dark')?'dark':'light')};
 if(localStorage.getItem('rcv3theme')==='dark'||(!localStorage.getItem('rcv3theme')&&matchMedia('(prefers-color-scheme:dark)').matches))document.documentElement.classList.add('dark');
+
+let deferredInstallPrompt=null;
+const installCard=document.getElementById('installCard');
+const installButton=document.getElementById('installButton');
+const installClose=document.getElementById('installClose');
+const installHelp=document.getElementById('installHelp');
+const runningStandalone=window.matchMedia('(display-mode: standalone)').matches||window.navigator.standalone===true;
+const isIOS=/iphone|ipad|ipod/i.test(navigator.userAgent);
+function showInstallCard(){if(!runningStandalone&&sessionStorage.getItem('installHintClosed')!=='1')installCard.hidden=false}
+window.addEventListener('beforeinstallprompt',e=>{e.preventDefault();deferredInstallPrompt=e;showInstallCard()});
+window.setTimeout(showInstallCard,700);
+installButton.addEventListener('click',async()=>{if(deferredInstallPrompt){await deferredInstallPrompt.prompt();await deferredInstallPrompt.userChoice;deferredInstallPrompt=null;installCard.hidden=true;return}installHelp.hidden=false;installHelp.textContent=isIOS?'Auf iPhone/iPad: Teilen öffnen und „Zum Home-Bildschirm“ wählen.':'Browsermenü öffnen und „App installieren“ oder „Zum Startbildschirm hinzufügen“ wählen.'});
+installClose.addEventListener('click',()=>{installCard.hidden=true;sessionStorage.setItem('installHintClosed','1')});
+window.addEventListener('appinstalled',()=>{installCard.hidden=true;deferredInstallPrompt=null});
+
 if('serviceWorker'in navigator)addEventListener('load',()=>navigator.serviceWorker.register('./service-worker.js').catch(()=>{}));render();

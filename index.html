@@ -1,6 +1,6 @@
 <!doctype html><html lang="de"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#0f172a"><title>RC Setup Coach 3</title>
+<meta name="theme-color" content="#0f172a"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="RC Coach 3"><title>RC Setup Coach 3</title>
 <link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="icon.svg">
 <link rel="stylesheet" href="style.css"></head><body>
 <header><div><small>RC TOURENWAGEN</small><h1>RC Setup Coach 3</h1></div><button id="theme">◐</button></header>
@@ -8,6 +8,17 @@
 <section id="home" class="view active">
 <div class="hero"><b>VERSION 3 · SETUP COACH</b><h2>Problem erkennen und Schritt für Schritt lösen</h2>
 <p>Konkrete Änderungen mit Erklärung, Durchführung, Test und Nebenwirkung.</p></div>
+<div id="installCard" class="install-card" hidden>
+  <div class="install-symbol">⬇</div>
+  <div class="install-text">
+    <strong>Als App installieren</strong>
+    <span>Offline nutzbar und direkt vom Startbildschirm öffnen.</span>
+    <small id="installHelp" hidden></small>
+  </div>
+  <button id="installButton" type="button">Installieren</button>
+  <button id="installClose" class="install-close" type="button" aria-label="Hinweis schließen">×</button>
+</div>
+
 <label class="search"><b>Suche</b><input id="search" type="search" placeholder="Rollzentrum, Ackermann, Untersteuern …"></label>
 <div class="context">
 <label>Belag<select id="surface"><option>ETS-Teppich</option><option>Asphalt</option></select></label>
