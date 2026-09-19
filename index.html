@@ -1,4 +1,4 @@
-<!doctype html><html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#111a2a"><title>RC Setup Lab 4.5 – Setup-Coach</title><style>
+<!doctype html><html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#111a2a"><title>RC Setup Lab 5.0 – Grip & 2WD Drift</title><style>
 :root{color-scheme:dark;--bg:#0b111e;--nav:#101a2b;--panel:#152238;--panel2:#192a44;--stroke:#30415a;--txt:#eef4ff;--muted:#a5b6cb;--blue:#52b7ff;--mint:#58e3bd;--amber:#ffd17a;--red:#ff9292;--shadow:0 20px 50px #0003}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font:15px/1.55 system-ui,-apple-system,"Segoe UI",Arial,sans-serif;background:radial-gradient(1000px 400px at 80% -160px,#22496a 0,transparent 80%),var(--bg);color:var(--txt)}button,input,select,textarea{font:inherit}button{cursor:pointer}button:disabled{opacity:.4;cursor:not-allowed}a{color:var(--blue)}.shell{max-width:1570px;margin:auto;display:grid;grid-template-columns:245px minmax(0,1fr);min-height:100vh}.nav{border-right:1px solid var(--stroke);padding:24px 15px;position:sticky;top:0;height:100vh;background:#101b2bde}.logo{font-weight:950;letter-spacing:.04em;font-size:19px;line-height:1.18;margin:0 5px 6px}.logo span{color:var(--mint)}.subtitle{color:var(--muted);font-size:12px;margin:0 5px 35px}.nav button{width:100%;border:0;background:transparent;color:var(--muted);text-align:left;border-radius:11px;padding:12px 13px;margin:2px 0;font-weight:700;display:flex;align-items:center;gap:11px}.nav button:hover,.nav button.active{background:#233b56;color:var(--txt)}.nav button.active{box-shadow:inset 3px 0 var(--mint)}.nav .number{width:22px;color:var(--mint);font-size:11px}.navfoot{border-top:1px solid var(--stroke);margin-top:30px;padding:16px 8px;font-size:12px;color:var(--muted)}main{padding:27px clamp(18px,3.3vw,54px) 55px;min-width:0}.top{display:flex;justify-content:space-between;gap:12px;align-items:center;margin-bottom:24px}.eyebrow{text-transform:uppercase;letter-spacing:.17em;color:var(--mint);font-size:11px;font-weight:900}h1{font-size:clamp(28px,3.5vw,45px);line-height:1.13;letter-spacing:-.04em;margin:6px 0 10px}h2{font-size:23px;letter-spacing:-.03em;margin:0 0 7px}h3{font-size:16px;margin:0 0 6px}p{margin:5px 0 13px}.muted,.hint{color:var(--muted)}.hint{font-size:12px}.status{font-size:12px;color:var(--mint);border:1px solid #30645f;padding:7px 12px;border-radius:22px;white-space:nowrap}.view{display:none}.view.active{display:block}.intro{max-width:840px;color:var(--muted);font-size:15px;margin-bottom:24px}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.grid3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}.card{background:linear-gradient(150deg,#192840,#131e30);border:1px solid var(--stroke);border-radius:17px;padding:21px;box-shadow:var(--shadow);min-width:0}.card.soft{box-shadow:none}.card.hero{background:linear-gradient(120deg,#164462,#13273d 68%)}.metric{font-size:28px;font-weight:900;font-variant-numeric:tabular-nums;line-height:1.2}.metric small{font-size:14px;font-weight:600;color:var(--muted)}.pill{display:inline-flex;align-items:center;gap:6px;background:#254258;border:1px solid #3a6076;border-radius:30px;padding:4px 10px;color:#afe9ff;font-size:11px;font-weight:750}.pill.mint{background:#154839;color:var(--mint);border-color:#2a7f67}.pill.warn{background:#4d3d24;color:var(--amber);border-color:#766039}.pill.danger{background:#512e36;color:var(--red);border-color:#89424d}.pills{display:flex;flex-wrap:wrap;gap:6px;margin:9px 0}.stack{display:grid;gap:16px}.formgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px}.field{min-width:0}.field label{display:block;color:#cad7e8;font-size:12px;font-weight:750;margin-bottom:5px}.field input,.field select,.field textarea,.search{width:100%;background:#0e192b;color:var(--txt);border:1px solid #45556a;outline:none;border-radius:9px;padding:10px 11px;min-height:42px}.field input:focus,.field select:focus,.field textarea:focus,.search:focus{border-color:var(--mint);box-shadow:0 0 0 2px #58e3bd24}.field textarea{resize:vertical;min-height:85px}.full{grid-column:1/-1}.actions{display:flex;flex-wrap:wrap;gap:9px;margin-top:15px}.btn{border:1px solid #48708c;color:#edf8ff;border-radius:10px;padding:9px 14px;background:#214362;font-weight:750}.btn:hover{background:#2b5779}.btn.primary{background:var(--mint);color:#082a27;border-color:var(--mint)}.btn.primary:hover{background:#82f6d5}.btn.ghost{background:transparent;border-color:#516077}.btn.danger{border-color:#9a4555;background:#44242e;color:#ffd5d9}.sectionhead{display:flex;align-items:center;justify-content:space-between;gap:13px;margin-bottom:17px}.sectionhead h2{margin:0}.divider{height:1px;background:var(--stroke);margin:19px 0}.note{border-left:3px solid var(--blue);padding:12px 14px;background:#17304b;border-radius:0 10px 10px 0;color:#d0e8fc;font-size:13px}.note.warning{border-color:var(--amber);background:#302a24;color:#fbe4bc}.note.success{border-color:var(--mint);background:#173b35;color:#b8f5df}.source{font-size:11px;color:#b4cce5;border:1px solid #425975;background:#1b304a;border-radius:6px;padding:2px 7px;display:inline-block;margin:3px 5px 0 0}.result{display:grid;gap:12px;margin-top:16px}.recommend{border:1px solid #3b5674;border-left:4px solid var(--mint);padding:17px;border-radius:12px;background:#13273c}.recommend p{color:#c6d8ea}.recommend .take{margin-top:6px}.kicker{font-size:11px;letter-spacing:.08em;text-transform:uppercase;font-weight:850;color:var(--mint)}.steps{display:grid;gap:9px}.step{display:flex;align-items:flex-start;gap:10px;padding:12px;border:1px solid var(--stroke);border-radius:11px;background:#101d30}.step input{margin-top:5px;accent-color:#58e3bd;transform:scale(1.15)}.step strong{display:block}.step small{color:var(--muted)}.progress{height:9px;border-radius:9px;background:#0b1625;overflow:hidden;border:1px solid var(--stroke)}.progress>div{height:100%;background:linear-gradient(90deg,#2479ae,var(--mint));width:0;transition:width .2s}.fieldrow{display:grid;grid-template-columns:1fr 1fr;gap:10px}.setup-section{margin-top:15px}.setup-section h3{color:#99e9d6}.badge-num{background:#18443c;color:var(--mint);width:28px;height:28px;display:inline-grid;place-items:center;border-radius:9px;font-size:12px}.diffline{display:flex;justify-content:space-between;gap:14px;border-bottom:1px solid #30445d;padding:8px 0}.diffline:last-child{border:0}.diffline strong{font-variant-numeric:tabular-nums}.tiny{font-size:12px}.warningbox{margin-top:14px}.warningbox p{font-size:13px;margin:4px 0}.miniapp{display:grid;grid-template-columns:200px 1fr;gap:20px;align-items:center}.car{width:180px;height:245px;margin:auto;position:relative;background:linear-gradient(180deg,#253e5d,#203047);border:2px solid #5982a5;border-radius:60px 60px 31px 31px;box-shadow:inset 0 0 0 12px #152134}.car:before,.car:after{content:"";position:absolute;width:34px;height:73px;border-radius:12px;background:#080f19;border:2px solid #60849c;left:-24px;top:47px;box-shadow:190px 0 0 -2px #080f19,190px 0 0 0 #60849c}.car:after{top:166px;box-shadow:190px 0 0 -2px #080f19,190px 0 0 0 #60849c}.windscreen{position:absolute;inset:56px 29px 85px;border:2px solid #66bdd4;border-radius:40px 40px 15px 15px;background:#152a40}.cartext{position:absolute;width:100%;text-align:center;top:14px;color:var(--mint);font-size:11px;font-weight:900}.reartext{top:auto;bottom:14px}.callout{padding:11px 14px;border:1px solid #3c5874;border-radius:10px;font-size:13px;color:#d0deec}.callout+.callout{margin-top:9px}.callout strong{color:var(--mint)}.table-wrap{overflow:auto;border:1px solid var(--stroke);border-radius:12px}table{width:100%;border-collapse:collapse;min-width:670px}th,td{padding:10px 13px;text-align:left;border-bottom:1px solid #31415a;font-size:13px;vertical-align:top}th{font-size:11px;text-transform:uppercase;letter-spacing:.06em;color:#b5cde4;background:#1b2d47}tr:last-child td{border-bottom:0}.clickrow{cursor:pointer}.clickrow:hover{background:#223c53}.blank{padding:28px 15px;color:var(--muted);text-align:center}.lexicon{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px;margin-top:15px}.lexicon .card p{font-size:13px;color:#c4d6e9}.lexicon .card{box-shadow:none}.tags{font-size:11px;font-weight:750;color:var(--mint);margin-bottom:6px}.footnote{font-size:12px;color:var(--muted);margin-top:19px}.hide{display:none!important}.toast{position:fixed;bottom:24px;right:25px;background:#195441;color:#ecfff9;padding:12px 17px;border-radius:10px;box-shadow:var(--shadow);max-width:350px;display:none;z-index:20}.toast.show{display:block}.print-only{display:none}@media(max-width:1100px){.shell{grid-template-columns:190px 1fr}.nav{padding:20px 8px}.grid3{grid-template-columns:repeat(2,minmax(0,1fr))}.miniapp{grid-template-columns:150px 1fr}.car{transform:scale(.77);margin-left:-13px}}@media(max-width:820px){.shell{display:block}.nav{position:static;height:auto;display:flex;align-items:center;gap:8px;padding:9px 12px;overflow:auto;border-right:0;border-bottom:1px solid var(--stroke)}.nav .logo{font-size:13px;white-space:nowrap}.subtitle,.navfoot{display:none}.nav button{width:auto;white-space:nowrap;padding:8px;font-size:12px}.nav .number{display:none}main{padding:22px 15px 45px}.grid,.grid3,.lexicon{grid-template-columns:1fr}.miniapp{grid-template-columns:1fr}.car{transform:scale(.8);margin:-30px auto}.top{align-items:flex-start}}@media(max-width:470px){.formgrid,.fieldrow{grid-template-columns:1fr}.status{white-space:normal}.card{padding:15px}.sectionhead{align-items:flex-start;flex-direction:column}}@media print{body{background:white;color:black}.nav,.top .status,.actions,.btn,.toast,.no-print{display:none!important}.shell{display:block}main{padding:5mm}.view{display:block!important;break-before:page}.card,.recommend{background:white;color:black;box-shadow:none;border:1px solid #777;break-inside:avoid}.card p,.hint,.muted{color:#333!important}.field input,.field select,.field textarea{color:#000;background:white;border:1px solid #999}.print-only{display:block}.eyebrow,.tags{color:#333}h1,h2,h3{color:#000}}
 /* Dritte Ebene: klare, auch mobil bedienbare Wirkungsdarstellung */
@@ -31,14 +31,25 @@
 .alternative .alt-top{display:flex;gap:9px;align-items:flex-start}.alternative .alt-number{flex:0 0 auto;background:#1a5446;color:#abfbe2;border-radius:7px;font-weight:900;min-width:27px;text-align:center;padding:1px 5px}
 .alternative .alt-reason{line-height:1.45;color:#d2e3f4;margin-top:5px;font-size:12px}
 @media(max-width:680px){.priority-explain{padding:13px}.priority-head{align-items:flex-start}}
-</style></head><body><div class="shell"><nav class="nav" aria-label="Hauptnavigation"><div><div class="logo">RC <span>SETUP</span><br>LAB</div><div class="subtitle">Fahrzeugdynamik · v4.5</div></div>
+
+/* Fahrmodus: eigenständige Drift-Logik statt Übernahme der Grip-Empfehlungen */
+.mode-selector{border:1px solid #365f72;background:linear-gradient(115deg,#173943,#13243c);border-radius:16px;padding:17px 20px;margin:15px 0 21px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.mode-selector .field{width:min(100%,360px)}.mode-selector h2{margin:0 0 5px;font-size:19px}.mode-selector p{font-size:13px;color:#c3dfe4;margin:0;max-width:650px}
+.drift-tag{display:inline-block;background:#154d44;border:1px solid #3a8775;border-radius:40px;color:#b4ffe6;font-size:12px;font-weight:800;padding:5px 10px;margin-bottom:8px}
+.drift-note{border-left:4px solid var(--amber);background:#302d28;color:#ffedc9;padding:13px 16px;border-radius:10px;margin:12px 0;font-size:13px}
+.drift-note strong{color:#ffdf95}.drift-gear{display:grid;gap:14px}.drift-gear .field{margin-bottom:3px}.drift-matrix{margin-top:18px}.drift-matrix details{border:1px solid #3e6071;background:#122439;border-radius:13px;padding:15px}.drift-matrix summary{color:var(--mint);font-weight:800;cursor:pointer}.drift-matrix table{min-width:725px}.drift-matrix td:first-child{font-weight:800;color:#b3ffe0}.drift-matrix td{line-height:1.45}.drift-priority{background:#11372f;border:1px solid #317a63;border-radius:11px;padding:13px 16px;color:#d6f8e9;font-size:13px}.drift-list .alternative{width:100%}.drift-list .alternative small{line-height:1.6}
+#driftPanel[hidden],#onroadPanel[hidden],#driftPhysicsNote[hidden]{display:none!important}
+@media(max-width:680px){.mode-selector{padding:14px}.mode-selector .field{width:100%}.drift-matrix details{padding:10px}}
+</style></head><body><div class="shell"><nav class="nav" aria-label="Hauptnavigation"><div><div class="logo">RC <span>SETUP</span><br>LAB</div><div class="subtitle">Fahrzeugdynamik · v5.0</div></div>
 <button class="active" type="button" data-view="coach"><span class="number">01</span> Setup-Coach</button>
 <button type="button" data-view="lexicon"><span class="number">02</span> Setup-Wissen</button>
 <button type="button" data-view="physics"><span class="number">03</span> Fahrzeugphysik</button>
-<div class="navfoot">Offline nutzbar · Dynamisch priorisiert · Eine Änderung pro Versuch · Keine Wirkungsgarantie.</div></nav><main><header class="top"><div class="eyebrow">RC Tourenwagen / Onroad · Setup-Coach</div><div class="status" id="saveStatus" role="status">● Einstellungen lokal</div></header><section class="view active" id="view-coach">
+<div class="navfoot">Offline nutzbar · Dynamisch priorisiert · Eine Änderung pro Versuch · Keine Wirkungsgarantie.</div></nav><main><header class="top"><div class="eyebrow" id="disciplineHeader">RC Tourenwagen / Onroad · Setup-Coach</div><div class="status" id="saveStatus" role="status">● Einstellungen lokal</div></header><section class="view active" id="view-coach">
 <div class="eyebrow">Fahrzeugphysik → eine Maßnahme → Wirkung überprüfen</div>
-<h1>Setup-Coach für Einsteiger</h1>
-<p class="intro">Der Assistent trennt Snap Oversteer von gleichmäßigem Übersteuern und unterscheidet beim Kippen vier unterschiedliche Ursachen, bevor er Änderungen vorschlägt. Du siehst den physikalischen Mechanismus, die erwartete Wirkung je Kurvenphase, Nebenwirkungen und einen kontrollierten Test. Bei unklarer Geometrie bleibt die Wirkung ausdrücklich eine Hypothese. Die Reihenfolge berücksichtigt den beobachteten Auslöser, den Prüfaufwand und mögliche Nebenwirkungen.</p>
+<h1 id="coachTitle">Setup-Coach für Einsteiger</h1>
+<p class="intro" id="coachIntro">Der Assistent trennt Snap Oversteer von gleichmäßigem Übersteuern und unterscheidet beim Kippen vier unterschiedliche Ursachen, bevor er Änderungen vorschlägt. Du siehst den physikalischen Mechanismus, die erwartete Wirkung je Kurvenphase, Nebenwirkungen und einen kontrollierten Test. Bei unklarer Geometrie bleibt die Wirkung ausdrücklich eine Hypothese. Die Reihenfolge berücksichtigt den beobachteten Auslöser, den Prüfaufwand und mögliche Nebenwirkungen.</p>
+<div class="mode-selector"><div><span class="drift-tag">ZWEI GETRENNTE SETUP-MODI</span><h2>Welches Fahrzeug stimmst du ab?</h2><p>Grip-Tourenwagen und heckgetriebene 2WD-Drifter haben unterschiedliche Ziele. Der Wechsel tauscht die Diagnose vollständig aus; deine jeweiligen Eingaben bleiben getrennt gespeichert.</p></div><div class="field"><label for="discipline">Fahrzeugtyp</label><select id="discipline"><option value="grip">Tourenwagen / Onroad (Grip)</option><option value="drift">2WD Drift – Heckantrieb / RWD</option></select></div></div>
+<div id="onroadPanel">
 <div class="grid coachstart">
 <div class="card"><h2>1 · Was macht dein Auto?</h2><div class="formgrid">
 <div class="field full"><label for="issue">Problem auswählen</label><select id="issue"><option value="under">Untersteuern – Auto schiebt über die Vorderachse</option><option value="over">Übersteuern – Heck rutscht zunehmend</option><option value="snap">Snap Oversteer – Heck bricht plötzlich und schlagartig aus</option><option value="roll">Kippen / Traction Roll</option><option value="lowgrip">Generell zu wenig Haftung</option><option value="twitch">Lenkung zu nervös / aggressiv</option><option value="brake">Instabil beim Bremsen</option><option value="straight">Zieht zu einer Seite / links-rechts unterschiedlich</option><option value="bumps">Springt / hoppelt auf Bodenwellen</option><option value="drive">Zu wenig Vortrieb beim Herausbeschleunigen</option></select></div>
@@ -50,9 +61,40 @@
 </div>
 <div id="diagnosisIntro" class="note" style="margin-top:15px">Problem, Kurvenphase und Ausstattung angeben. Es folgt eine physikalisch begründete Diagnose.</div>
 <div id="diagnosisResults" class="result" aria-live="polite"></div>
+</div>
+<div id="driftPanel" hidden>
+ <div class="drift-note"><strong>Wichtig: eigener RWD-Drift-Coach.</strong> Die folgende Tuningmatrix basiert auf deiner als „Draft“ gekennzeichneten Grafik. Sie ist eine Sammlung von Versuchsrichtungen, kein allgemeingültiges Fahrwerksgesetz. Gegenlenken, Reifen, Gyro, Lenkwinkel und Differenzialtyp werden zuerst geprüft. Keine Empfehlungen aus dem Grip-Modus werden automatisch übertragen.</div>
+ <div class="grid coachstart">
+  <div class="card">
+   <h2>1 · Was passiert beim Driften?</h2>
+   <div class="formgrid">
+    <div class="field full"><label for="dIssue">Fahrproblem</label><select id="dIssue"><option value="under">Untersteuern – schiebt nach außen / driftet nicht ausreichend ein</option><option value="over">Übersteuern – dreht unkontrolliert ein / Spin</option><option value="straighten">Auto richtet sich im Drift unerwünscht auf</option><option value="angle">Zu wenig Driftwinkel / Gegenlenkwinkel</option><option value="transition">Übergang zwischen zwei Driftrichtungen zu hektisch</option><option value="oscillation">Lenkung pendelt / Gyro schwingt</option><option value="drive">Zu wenig kontrollierbarer Vortrieb im Drift</option><option value="asymmetric">Links und rechts deutlich unterschiedliches Verhalten</option></select></div>
+    <div class="field"><label for="dPhase">Wann tritt es auf?</label><select id="dPhase"><option value="entry">Einleitung / Einlenken</option><option value="hold">Drift halten / Kurvenmitte</option><option value="exit">Ausgang / unter Gas</option><option value="transition">Driftwechsel</option><option value="all">Überall / nicht sicher</option></select></div>
+    <div class="field"><label for="dSpeed">Tempo im Problemabschnitt</label><select id="dSpeed"><option value="unknown">Nicht sicher</option><option value="low">Langsame enge Kurve</option><option value="high">Schnelle weite Kurve</option></select></div>
+    <div class="field"><label for="dSurface">Fahrbahnbelag</label><select id="dSurface"><option value="unknown">Nicht sicher / gemischt</option><option value="pvc">P-Tile / PVC / glatter Kunststoff</option><option value="carpet">Teppich</option><option value="asphalt">Asphalt / Beton</option><option value="bumpy">Uneben / Bodenwellen</option></select></div>
+    <div class="field"><label for="dDiff">Hinteres Differenzial</label><select id="dDiff"><option value="unknown">Nicht bekannt – erst feststellen</option><option value="spool">Starrachse / Spool / starr gesperrt</option><option value="ball">Einstellbares Kugeldifferenzial</option><option value="gear">Öldifferenzial (Bauart und Befüllung bekannt)</option><option value="open">Offenes oder rutschendes Differenzial vermutet</option></select></div>
+    <div class="field"><label for="dGyro">Gyro / Lenkungsstabilisierung</label><select id="dGyro"><option value="unknown">Nicht sicher</option><option value="on">Vorhanden und aktiv</option><option value="off">Kein Gyro / ausgeschaltet</option></select></div>
+    <div class="field"><label for="dArea">Welche Stellschraube?</label><select id="dArea"><option value="auto">Automatisch priorisieren</option><option value="toe">Spur</option><option value="ride">Bodenfreiheit</option><option value="ackermann">Ackermann / Lenkung</option><option value="caster">Nachlauf</option><option value="track">Spurbreite</option><option value="shockMount">Dämpferposition</option><option value="springs">Federn</option><option value="damping">Dämpferöl / Kolben</option><option value="rollcentre">Sturzstrebe / Geometrie</option><option value="diff">Differenzial</option><option value="electronics">Gyro / Sender / Gas</option><option value="checks">Prüfungen</option><option value="all">Alle passenden Maßnahmen</option></select></div>
+    <div class="field full"><label for="dNotes">Beobachtung (optional)</label><textarea id="dNotes" placeholder="z. B. nur bei großem Gegenlenkwinkel, P-Tile, beim schnellen Driftwechsel …"></textarea></div>
+   </div>
+   <div class="actions"><button class="btn primary" id="dDiagnose" type="button">Drift-Setup & Wirkung anzeigen →</button><button class="btn ghost" id="dReset" type="button">Drift-Eingaben zurücksetzen</button></div>
+  </div>
+  <div class="card drift-gear">
+   <h2>2 · Ausstattung und Grundprüfung</h2>
+   <div class="field"><label for="dPreset">Was ist an deinem 2WD-Drifter einstellbar?</label><select id="dPreset"><option value="unknown">Noch unbekannt – zunächst nur prüfen</option><option value="race">Setupfähiges RWD-Driftchassis (Optionen vor Test prüfen)</option><option value="custom">Vorhandene Bauteile einzeln auswählen</option></select></div>
+   <div class="ability-checks" id="dAbilityChecks" hidden></div>
+   <div class="field"><label for="dChecked">Reifen, Mechanik und Lenkung bereits geprüft?</label><select id="dChecked"><option value="no">Nein / nicht sicher</option><option value="yes">Ja – gleicher Reifensatz, freie Lenkung, Symmetrie kontrolliert</option></select></div>
+   <div class="note warning"><strong>Vor dem Drift-Tuning:</strong> gleiche Hinterreifen und gleicher Untergrund; volle Gegenlenkung ohne Anschlagen; Servo und Gyro arbeiten ohne Pendeln. Sperrwirkung am hinteren Diff zuerst eindeutig feststellen. Bei „Kugeldiff“ niemals die Mutter blind festziehen.</div>
+   <div class="note">Im Drift zählt die <strong>kontrollierbare Balance aus Seitenführung und Schlupf</strong>, nicht maximaler Grip oder eine einzelne Bestzeit. Prüfe Driftwinkel, Linie, Stabilität, gleichmäßiges Tempo und reproduzierbare Übergänge.</div>
+  </div>
+ </div>
+ <div class="note" id="dDiagnosisIntro" style="margin-top:15px">Fahrproblem, Fahrsituation und Ausstattung wählen. Die 2WD-Drift-Diagnose arbeitet unabhängig vom Onroad-Modus.</div>
+ <div id="dResults" class="result" aria-live="polite"></div>
+ <div class="drift-matrix card"><span class="drift-tag">AUS DEINER GRAFIK · ÜBERSETZT</span><h2>2WD-Drift: Einstellrichtungen im Überblick</h2><p class="muted">Diese Tabelle übernimmt die Richtungen aus dem hochgeladenen <em>Entwurf</em>. Sie ist nicht mit einer sicher eintretenden Wirkung gleichzusetzen. Der Coach filtert nach Auslöser, Tempo, Bauteil und technischer Plausibilität. Besonders Ackermann, Dämpfer-Anlenkung, Sturzstreben und Differenziale brauchen die tatsächliche Chassis-Geometrie.</p><details><summary>Alle 18 Tuning-Zeilen öffnen</summary><div class="table-wrap" style="margin-top:15px"><table><thead><tr><th>Einstellung</th><th>Bei Untersteuern: Entwurfsrichtung</th><th>Bei Übersteuern: Entwurfsrichtung</th></tr></thead><tbody id="driftMatrixBody"></tbody></table></div></details></div>
+</div>
 </section>
 <section class="view" id="view-lexicon"><div class="eyebrow">Bauteil → Wirkung → Einschränkung</div><h1>Setup-Wissen</h1><p class="intro">Technische Kurzerklärungen für jedes einstellbare Bauteil. Die tatsächliche Reaktion hängt von Fahrzeug, Reifen, Strecke und Einbaugeometrie ab. Snap Oversteer ist ein plötzlicher Haftungsabriss, keine eigene magische Fahrwerksgröße.</p><input id="lexSearch" class="search" aria-label="Setup-Wissen durchsuchen" placeholder="Suche: Sturz, Differential, Nachlauf, Grip ..."><div class="lexicon" id="lexCards"></div><div class="note warning" style="margin-top:20px"><strong>Wichtig bei Federn und Stabilisatoren:</strong> Federn: kein direkter universeller Grip-Schalter. Vorn relativ steiferer Stabi: im Grundmodell weniger VA-Haftungsreserve, aber eine schnellere Einlenkreaktion kann subjektiv mehr Lenkung vermitteln. Der Coach trennt Mechanismus, erwartete Wirkung und möglichen Sonderfall.</div></section>
-<section class="view" id="view-physics"><div class="eyebrow">Grundlage · Fahrzeugdynamik</div><h1>Wirkung statt Setup-Mythen</h1><p class="intro">Interaktives <strong>Lehrmodell</strong> der seitlichen Radlastverlagerung. Du kannst nachvollziehen, weshalb ein niedrigerer Schwerpunkt oder eine breitere Spur physikalisch anders wirkt als ein härterer Stabilisator. Keine Simulation eines konkreten Autos und keine berechneten Grip- oder Rundenzeiten.</p>
+<section class="view" id="view-physics"><div id="driftPhysicsNote" class="drift-note" hidden><strong>Drift-Hinweis:</strong> Das folgende Onroad-Grundmodell veranschaulicht Radlastverlagerung. Es berechnet weder Driftwinkel noch Reifen-Schlupf, Gegenlenkgeometrie, Gyro-Eingriffe oder einen RWD-Setup-Effekt. Für konkrete Änderungen den separaten 2WD-Drift-Coach nutzen.</div><div class="eyebrow">Grundlage · Fahrzeugdynamik</div><h1>Wirkung statt Setup-Mythen</h1><p class="intro">Interaktives <strong>Lehrmodell</strong> der seitlichen Radlastverlagerung. Du kannst nachvollziehen, weshalb ein niedrigerer Schwerpunkt oder eine breitere Spur physikalisch anders wirkt als ein härterer Stabilisator. Keine Simulation eines konkreten Autos und keine berechneten Grip- oder Rundenzeiten.</p>
 <div class="grid"><div class="card"><h2>Stelle das Beispielauto ein</h2><div class="model-fields">
 <div><label for="modelMass">Fahrzeugmasse <output id="outMass">1,50 kg</output></label><input id="modelMass" type="range" min="0.8" max="4" step="0.05" value="1.5"></div>
 <div><label for="modelCG">Schwerpunktshöhe <output id="outCG">35 mm</output></label><input id="modelCG" type="range" min="15" max="70" step="1" value="35"></div>
@@ -1549,7 +1591,7 @@ const LEX=[
 ];
 LEX.push(['Traction Roll / Kippen','Fahrverhalten','Zuerst unterscheiden: plötzlicher Vorderreifen-Eingriff, Wanken ohne Kontakt, nachgewiesener Anschlag oder Bodenwelle. Schwerpunkt und Spurbreite wirken anders als Federhärte.','Vordere Federn weicher ist kein Standardrezept. Mehr Wanken und Grip können Kippen verschlimmern; härtere Federn können Frontgrip kosten. Je Ursache nur einen Test durchführen.']);
 LEX.push(['Snap Oversteer','Fahrverhalten','Plötzlicher Verlust der hinteren Seitenführung; mögliche Auslöser sind Bremsen, Gaswegnehmen, Gasstoß, Bodenwellen, Reifen oder asymmetrische Mechanik.','Vor Maßnahmen den Zeitpunkt eingrenzen. Härtere Hinterfedern nur bei nachgewiesenem Durchschlagen erwägen; sonst droht weniger Heckhaftung. Gleichmäßiges Übersteuern und Kippen sind andere Probleme.']);
-function renderLexicon(){const q=$('lexSearch').value.toLocaleLowerCase('de').trim(),arr=LEX.filter(x=>x.join(' ').toLocaleLowerCase('de').includes(q));$('lexCards').innerHTML=arr.length?arr.map(x=>`<article class="card"><div class="tags">${esc(x[1])}</div><h3>${esc(x[0])}</h3><p>${esc(x[2])}</p><div class="note warning"><strong>Beachten:</strong> ${esc(x[3])}</div></article>`).join(''):'<p>Keine passenden Einträge.</p>'}
+function renderLexicon(){const q=$('lexSearch').value.toLocaleLowerCase('de').trim(),arr=(discipline==='drift'?DRIFT_LEX:LEX).filter(x=>x.join(' ').toLocaleLowerCase('de').includes(q));$('lexCards').innerHTML=arr.length?arr.map(x=>`<article class="card"><div class="tags">${esc(x[1])}</div><h3>${esc(x[0])}</h3><p>${esc(x[2])}</p><div class="note warning"><strong>Beachten:</strong> ${esc(x[3])}</div></article>`).join(''):'<p>Keine passenden Einträge.</p>'}
 $('lexSearch').addEventListener('input',renderLexicon);
 function initPhysics(){for(const id of ['modelMass','modelCG','modelTrack','modelG','modelFront'])$(id).addEventListener('input',renderPhysics);$('resetPhysics').addEventListener('click',()=>{for(const [id,v] of [['modelMass',1.5],['modelCG',35],['modelTrack',190],['modelG',0.8],['modelFront',50]])$(id).value=v;renderPhysics()});renderPhysics()}
 function renderPhysics(){let m=+$('modelMass').value,h=+$('modelCG').value,t=+$('modelTrack').value,g=+$('modelG').value,share=+$('modelFront').value/100;
@@ -1560,5 +1602,494 @@ function renderPhysics(){let m=+$('modelMass').value,h=+$('modelCG').value,t=+$(
  $('loadVisual').innerHTML=loads.map(([title,load,axle])=>`<div class="wheel-load"><span>${title}</span><div class="wheel-meter"><div class="${axle}" style="width:${Math.max(0,Math.min(100,load/max*100)).toFixed(2)}%"></div></div><b>${load.toLocaleString('de-DE',{maximumFractionDigits:2})} N</b></div>`).join('');
  const invalid=loads.some(a=>a[1]<0);$('physicsInterpret').textContent=invalid?'ACHTUNG: Ein modellierter Innenradwert liegt unter 0 N: Radabheben. Das vereinfachte Modell ist hier nicht mehr gültig.':`Im Beispiel wandern insgesamt ${de.toFixed(2).replace('.',',')} N von innen nach außen. Der gewählte VA-Anteil bestimmt nur die Aufteilung; änderst du ihn, bleibt die gesamte Lastverlagerung bei gleichen übrigen Werten unverändert. Die mögliche Reifenhaftung ist damit NICHT berechnet.`;}
 
-state=load();renderAbilities();initDiagnosis();renderLexicon();initPhysics();
+// Separater 2WD-RWD-Drift-Coach. Grip-Daten und Grip-Maßnahmen bleiben unverändert.
+const DRIFT_STORE='rc_setup_lab_drift_v5',MODE_STORE='rc_setup_lab_mode_v5';
+let discipline='grip';
+try{discipline=localStorage.getItem(MODE_STORE)==='drift'?'drift':'grip'}catch{}
+const DRIFT_DEFAULT={issue:'under',phase:'entry',speed:'unknown',surface:'unknown',diff:'unknown',gyro:'unknown',area:'auto',notes:'',checked:'no',preset:'unknown',flags:[]};
+const DRIFT_CAPABILITIES=[
+ ['ride','Bodenfreiheit vorne/hinten getrennt einstellbar'],['ack','Ackermann-Gestänge verstellbar, Lenkwinkel messbar'],
+ ['frontToe','Spur vorne verstellbar'],['rearToe','Spur hinten verstellbar'],['caster','Nachlauf verstellbar'],
+ ['frontTrack','Spurbreite vorn verstellbar'],['rearTrack','Spurbreite hinten verstellbar'],
+ ['frontShock','Untere/obere Dämpferaufnahme vorn verstellbar'],['rearShock','Untere/obere Dämpferaufnahme hinten verstellbar'],
+ ['frontSpring','Federn vorne austauschbar'],['rearSpring','Federn hinten austauschbar'],
+ ['frontOil','Dämpferöl vorne wechselbar'],['rearOil','Dämpferöl hinten wechselbar'],
+ ['frontPiston','Dämpferkolben vorne wechselbar'],['rearPiston','Dämpferkolben hinten wechselbar'],
+ ['frontCamberLink','Vordere Sturzstrebe und Anlenkpunkte verstellbar'],
+ ['rearDiff','Hinteres Differenzial tatsächlich einstellbar'],['gyro','Gyro-Empfindlichkeit verstellbar'],
+ ['radio','Sender: Expo/Lenkweg/Gaskurve verstellbar']
+];
+function dLoad(){let x={};try{x=JSON.parse(localStorage.getItem(DRIFT_STORE))||{}}catch{};let d={...DRIFT_DEFAULT};for(const k of Object.keys(d)){if(typeof d[k]==='string'&&typeof x[k]==='string')d[k]=x[k].slice(0,300)}
+d.preset=['unknown','race','custom'].includes(d.preset)?d.preset:'unknown';d.flags=d.preset==='race'?DRIFT_CAPABILITIES.map(c=>c[0]):d.preset==='custom'&&Array.isArray(x.flags)?x.flags.filter(f=>DRIFT_CAPABILITIES.some(c=>c[0]===f)):[];return d}
+let driftState=dLoad();
+function dSave(){try{localStorage.setItem(DRIFT_STORE,JSON.stringify(driftState))}catch{} }
+function dAvailable(feature){return feature==='universal'||(feature==='gyro'&&$('dGyro').value!=='on'?false:driftState.flags.includes(feature))}
+function dRenderAbilities(){const custom=driftState.preset==='custom';$('dPreset').value=driftState.preset;$('dAbilityChecks').hidden=!custom;
+ $('dAbilityChecks').innerHTML=custom?DRIFT_CAPABILITIES.map(([id,label])=>`<label class="ability"><input type="checkbox" data-dcap="${id}" ${driftState.flags.includes(id)?'checked':''}>${esc(label)}</label>`).join(''):'';
+ $('dAbilityChecks').querySelectorAll('[data-dcap]').forEach(el=>el.addEventListener('change',()=>{driftState.flags=el.checked?[...new Set([...driftState.flags,el.dataset.dcap])]:driftState.flags.filter(x=>x!==el.dataset.dcap);dSave();if($('dResults').innerHTML)dDiagnose()}));
+}
+const D_AREA={checks:'Prüfung',toe:'Spur',ride:'Bodenfreiheit',ackermann:'Ackermann',caster:'Nachlauf',track:'Spurbreite',shockMount:'Dämpferposition',springs:'Federn',damping:'Dämpfer / Kolben',rollcentre:'Sturzstrebe / Geometrie',diff:'Differenzial',electronics:'Gyro / Sender / Gas'};
+const D_ACT={};
+function da(id,title,group,feature,how,physics,expect,trade,effects,test,condition='Versuchshypothese'){
+ D_ACT[id]={title,group,feature,how,physics,expect,trade,effects,test,condition};
+}
+// Grundprüfung und elektronikbezogene, meist einfache Korrekturen.
+da('baseline','Reifen, Lenkung und Hinterachse prüfen','checks','universal',
+ 'Vier gleiche, zum Belag passende Driftreifen prüfen. Vorne: lenken bis zum vorgesehenen Gegenlenkwinkel; Reifen, Spurstangen, Felge und Chassis dürfen nicht anschlagen. Hintere Radlager, Antriebswellen, Symmetrie, Gestänge, Radmuttern und Leichtgängigkeit prüfen.',
+ 'Eine blockierte Lenkung, unterschiedlicher Reifenabrieb oder ein klemmender Antrieb verändert den Drift ohne jede Setup-Änderung.',
+ 'Ein reproduzierbarer Ausgangszustand; erst dann lässt sich Unter-/Übersteuern verlässlich vergleichen.',
+ 'Keine neuen Federn oder Sturzwerte montieren, solange mechanische Fehler bestehen.',
+ ['Einleitung: Lenkausschlag prüfen','Halten: Reifen und Freigängigkeit prüfen','Ausgang: Heckantrieb prüfen'],
+ 'Gleiche Kurve links und rechts bei niedriger Geschwindigkeit; Ausgangseinstellungen fotografieren.');
+da('diffIdentify','Hinteres Differenzial / Sperrwirkung feststellen','checks','universal',
+ 'Anleitung oder Getriebe prüfen: Spool/Starrachse, Kugeldiff oder Öldiff? Bei geöffnetem Rad prüfen, ob eines ohne ausreichenden Kraftschluss durchdreht. Am Kugeldiff nur nach Herstellervorgabe kontrollieren.',
+ 'Eine Starrachse verteilt die Raddrehzahl anders als ein offenes oder rutschendes Diff; die Grafikregel „festziehen“ gilt nicht für jedes Bauteil.',
+ 'Differenzialtyp und eventuelle Fehlfunktion sind vor einem Tuningversuch bekannt.',
+ 'Spool nicht „festziehen“. Kugeldiff nie über Herstellergrenze; Öl- und Kugeldiff-Einstellungen sind nicht gleichzusetzen.',
+ ['Einleitung: Sperrwirkung klären','Halten: Raddrehzahlverhalten prüfen','Ausgang: Schlupf beider Hinterräder beobachten'],
+ 'Antriebsräder gefahrlos freidrehen/prüfen; identische Driftpassage mit intaktem Diff wiederholen.');
+da('steerCheck','Maximalen Gegenlenkwinkel und symmetrische Lenkung prüfen','checks','universal',
+ 'Lenkung langsam von Anschlag zu Anschlag bewegen, Radwinkel beidseitig und bei Vollgegenlenkung vergleichen. Servo-Endpunkte nicht gegen mechanische Anschläge fahren lassen; Spurstangen und Felgenfreigang kontrollieren.',
+ 'Zu wenig freier Gegenlenkwinkel kann sich wie Übersteuern, Aufrichten oder fehlende Driftkontrolle anfühlen, obwohl nicht die Federhärte verantwortlich ist.',
+ 'Ausschlag und Freigängigkeit links/rechts sind bekannt, bevor Ackermann oder Sturz verändert werden.',
+ 'Mehr Servo-Endpunkt über mechanischen Anschlag ist gefährlich für Servo und Gestänge.',
+ ['Einleitung: Lenkwinkel prüfen','Halten: Gegenlenkwinkel reicht?','Ausgang: kein Servo-Anschlagen'],
+ 'Fahrzeug aufbocken; dann gleiche weite Driftkurve in beide Richtungen mit sicherem Tempo.');
+da('gyroCheck','Gyro-Richtung und Stabilisierung prüfen','checks','universal',
+ 'Prüfe Korrekturrichtung gemäß Gyro-Handbuch durch langsames Drehen des Chassis. Neutralstellung, Servogeschwindigkeit, Spiel und Versorgung prüfen. Gyro nur bei bekannter korrekter Richtung aktivieren.',
+ 'Ein gegenläufig oder zu stark eingreifender Regler kann ein Lenkproblem erzeugen, das Fahrwerksänderungen nicht beheben.',
+ 'Elektronische Ursache lässt sich vom Fahrwerksverhalten trennen.',
+ 'Falsche Korrekturrichtung nicht auf der Strecke austesten; zuerst am aufgebockten Chassis prüfen.',
+ ['Einleitung: Korrekturrichtung','Halten: Schwingen beobachten','Übergang: Nachregeln vergleichen'],
+ 'Gyro am angehobenen Fahrzeug prüfen; mit reduzierter Geschwindigkeit testen.');
+da('gyroGainDown','Gyro-Empfindlichkeit in kleiner Stufe senken','electronics','gyro',
+ 'Aktuelle Gyro-Empfindlichkeit notieren. Bei Pendeln/Übersteuern des Servos die Empfindlichkeit eine kleine Stufe verringern. Korrekturrichtung vorher prüfen.',
+ 'Hohe Verstärkung bei endlicher Servo-/Sensor-Verzögerung kann eine Schwingung erzeugen.',
+ 'Geringeres Lenkpendeln und sanftere Driftwechsel sind möglich.',
+ 'Zu wenig Stabilisierung kann einen unerfahrenen Fahrer überfordern; nicht in großen Schritten springen.',
+ ['Einleitung: ggf. ruhiger','Halten: Pendeln tendenziell ↓','Wechsel: Nachschwingen ggf. ↓'],
+ 'Gleiche S-Kombination, nur Gyro-Gain ändern und Pendelbewegung beobachten.','Physikalisch plausibel');
+da('steeringExpo','Lenkreaktion am Sender im kleinen Bereich entschärfen','electronics','radio',
+ 'Lenkkennlinie am Sender so stellen, dass um die Mitte weniger Ausschlag pro Eingabe entsteht; Expo-Vorzeichen am Sender prüfen. Maximalwinkel beibehalten und dokumentieren.',
+ 'Ändert den Steuerbefehl, nicht die Reifenhaftung oder Fahrwerksgeometrie.',
+ 'Sanfterer Driftbeginn oder besser dosierbare Übergänge möglich.',
+ 'Kann Korrekturen subjektiv verlangsamen. Keine direkte Änderung des maximalen Gegenlenkwinkels.',
+ ['Einleitung: sanfter','Halten: Grip unverändert','Übergang: Dosierung prüfen'],
+ 'Identische langsame S-Kombination, nur Senderkennlinie ändern.','Physikalisch plausibel');
+da('throttleSmooth','Gasabgabe und Motoreinstellung isolieren','checks','universal',
+ 'Vergleiche denselben Drift mit sanfterem Gasaufbau. Prüfe Gaskurve, ESC-Bremse, Untersetzung, Motor-/Reifentemperatur und ob nur ein Hinterrad hochdreht.',
+ 'Die Hinterreifen teilen ihre Reibungsreserve zwischen Längsantrieb und Seitenkraft. Zu frühes Gas und ein rutschendes Diff können identische Symptome wie Fahrwerksfehler verursachen.',
+ 'Das Problem lässt sich einem Gas-/Antriebseinfluss zuordnen.',
+ 'Kein gleichzeitig anderer Reifen, Übersetzung und Dämpferöl ändern.',
+ ['Einleitung: Gas neutral prüfen','Halten: Kraftbedarf trennen','Ausgang: Antrieb beobachten'],
+ 'Gleiche Kurve, gleicher Winkel, zweimal unterschiedlicher Gasaufbau bei sicherem Tempo.','Physikalisch plausibel');
+// Übertragen aus der Nutzer-Grafik: Richtungen als bedingte Einzelversuche, NICHT als allgemeine Drift-Gesetze.
+da('frontRideDown','Bodenfreiheit vorne geringfügig verringern','ride','ride',
+ 'Fahrfertige Höhe vorne messen und nur minimal senken; hinten unverändert, anschließend Restfederweg, Chassiskontakt und Lenkfreigang prüfen.',
+ 'Ändert Nicklage, Schwerpunktlage und die Arbeitspunkte beider Achsen gleichzeitig. Eine reine „mehr Frontgrip“-Wirkung folgt daraus nicht.',
+ 'Bei diesem Chassis kann sich die Einleitungs- und Winkelbalance ändern: nur als Versuchsrichtung bei Schieben.',
+ 'Zu niedrige Front kann aufsetzen; Rollzentren und Sturzverlauf ändern sich.',
+ ['Einleitung: Balance prüfen','Halten: Frontkontakt prüfen','Ausgang: Aufsetzen prüfen'],
+ 'Mit gleicher Reifenpaarung und Höhe hinten eine kleine Stufe vorne absenken; sofort bei Schleifspuren zurück.');
+da('frontRideUp','Bodenfreiheit vorne geringfügig erhöhen','ride','ride',
+ 'Vordere Höhe minimal erhöhen, hinten unverändert; genügend Ausfederweg und Lenkwinkelfreigang nachmessen.',
+ 'Verändert Rake/Schwerpunkt und Federungsarbeitspunkt. Daraus lässt sich kein garantierter Gripwechsel ableiten.',
+ 'Mögliche Verringerung des aggressiven Einlenkens als Einzeltest.',
+ 'Höherer Schwerpunkt kann Kipp-/Wankneigung erhöhen; Front kann ausfedern.',
+ ['Einleitung: ggf. weniger bissig','Halten: Linie beobachten','Ausgang: Rückstellung beobachten'],
+ 'Nur Front-Bodenfreiheit ändern und eine identische Einleitung vergleichen.');
+da('rearRideUp','Bodenfreiheit hinten geringfügig erhöhen','ride','ride',
+ 'Hintere Bodenfreiheit minimal anheben, VA-Höhe konstant lassen; Restfederweg und Schwerpunktlage nachmessen.',
+ 'Die Fahrzeugneigung ändert geometrische und dynamische Arbeitspunkte; ein Driftvorteil ist nicht universell.',
+ 'Entwurfsrichtung gegen Schieben; prüfe Driftwinkel und Übergänge.',
+ 'Mehr Höhe kann Kippneigung und ungewollte Geometrieänderungen erhöhen.',
+ ['Einleitung: Rake-Effekt prüfen','Halten: Balance prüfen','Ausgang: Traktion prüfen'],
+ 'Nur Höhe hinten anpassen; Bodenfreiheit vorne und Reifensatz unverändert.');
+da('rearRideDown','Bodenfreiheit hinten geringfügig reduzieren','ride','ride',
+ 'Heck minimal absenken, Vorderachse nicht verändern, ausreichenden Einfederweg sichern.',
+ 'Ändert Rake, Schwerpunkt und Achsgeometrie; beeinflusst nicht direkt eine feste Reibungszahl.',
+ 'Als kontrollierter Versuch bei zu starker Rotation möglich.',
+ 'Gefahr des Aufsetzens und anderer Ausfeder-/Sturzwerte.',
+ ['Einleitung: Balance prüfen','Halten: Heckkontakt prüfen','Ausgang: Aufsetzen beachten'],
+ 'Nur Heckhöhe ändern, vorher/nachher messen.');
+da('ackMore','Ackermann-Differenz am Driftlenkwinkel kontrolliert vergrößern','ackermann','ack',
+ 'Lenkwinkel von Innen- und Außenrad bei dem tatsächlich benutzten Gegenlenkwinkel messen. Nur wenn die mechanische Geometrie klar ist, Differenz mit einer dokumentierten, kleinen Gestängeänderung vergrößern.',
+ 'Ackermann ist der WinkelUNTERSCHIED zwischen Innen- und Außenrad; keine pauschale Vergrößerung beider Lenkwinkel. Bei großen Driftausschlägen können Reifenwinkel und Selbstlenkverhalten gegensätzlich reagieren.',
+ 'Möglicher Versuch gegen Untersteuern oder mangelnde Winkelkontrolle – Wirkung am Auto nachmessen.',
+ 'Mehr Winkelunterschied kann ein Rad querstellen, bremsen oder schlagartiges Aufrichten auslösen. Gestänge darf nicht blockieren.',
+ ['Einleitung: Lenkwinkeldifferenz prüfen','Halten: Reifenscrub beobachten','Ausgang: Rückstellung prüfen'],
+ 'Beide Winkel vor und nach Umbau bei gleichem Gegenlenkwinkel notieren; gleiche Driftkurve.');
+da('ackLess','Ackermann-Differenz am Driftlenkwinkel verringern','ackermann','ack',
+ 'Innen- und Außenradwinkel vor/nach der Änderung bei definiertem Gegenlenkausschlag messen. Differenz in kleinen Schritten reduzieren; vollen Freigang behalten.',
+ 'Ein kleinerer Winkelunterschied verändert die beiden Schräglaufwinkel und kann Drag/Lenkgefühl beeinflussen; keine garantierte Änderung des Gesamtgrips.',
+ 'Entwurfsrichtung für ein zu stark drehendes RWD-Driftauto.',
+ 'Zu wenig Differenz kann bei engen Radien die Reifen gegeneinander arbeiten lassen. Links/rechts nachmessen.',
+ ['Einleitung: Balance prüfen','Halten: Driftwinkel prüfen','Übergang: Lenkruhe vergleichen'],
+ 'Nur Ackermann verändern, gemessene Winkel dokumentieren.');
+da('frontToeOut','Vordere Nachspur leicht erhöhen','toe','frontToe',
+ 'Vorhandene Nachspur je Rad messen. Beide Spurstangen symmetrisch in kleiner Stufe mehr Nachspur einstellen; Endlenkwinkel neu kontrollieren.',
+ 'Statische Spur verändert Anstellwinkel im Anfangsbereich und den Winkelverlauf bis zum Gegenlenken; nicht identisch mit Ackermann.',
+ 'Kann Einleiten/Rotieren bei schiebendem Auto verändern.',
+ 'Zu viel Nachspur bringt Scrub, asymmetrischen Winkelverlauf und unstetiges Lenkgefühl.',
+ ['Einleitung: ggf. direkter','Halten: Gegenlenkwinkel prüfen','Übergang: Reifenbremse möglich'],
+ 'Gleiche langsame Einleitung, nur Nachspur an beiden Vorderrädern.');
+da('frontToeLess','Vordere Nachspur verringern (Richtung neutral)','toe','frontToe',
+ 'Bestehenden Wert dokumentieren; je Rad symmetrisch eine kleine Stufe weniger Nachspur, nicht ungeprüft in starke Vorspur.',
+ 'Weniger statische Schrägstellung ändert das Anfangslenkverhalten und ggf. Reifenscrub.',
+ 'Als kleiner Versuch bei überaggressivem Einleiten möglich.',
+ 'Es kann an gewünschter Anfangsrotation fehlen; Ackermann-Vollwinkel überprüfen.',
+ ['Einleitung: ggf. sanfter','Halten: Linie prüfen','Übergang: Reaktion vergleichen'],
+ 'Nur Vorderachsspur ändern, bei gleichem Gyro-Wert testen.');
+da('rearToeLess','Hintere Vorspur in kleiner Stufe verringern','toe','rearToe',
+ 'Zuerst die beiden Einzelradwerte messen. Falls Vorspur vorhanden ist, symmetrisch um eine kleine Stufe verringern; innerhalb der Herstellergrenzen bleiben.',
+ 'Weniger Vorspur verändert hintere Eigenlenkstabilität und Scrub. In RWD-Drift kann das Einleiten erleichtern, muss aber nicht.',
+ 'Könnte bei einem zu fest wirkenden Heck mehr Rotation zulassen.',
+ 'Spurtreue, Vortrieb und kontrollierbare Driftstabilität können leiden.',
+ ['Einleitung: Rotation ggf. ↑','Halten: Heckruhe ggf. ↓','Ausgang: Vortrieb prüfen'],
+ 'Einen kleinen Schritt hinten ändern, links/rechts symmetrisch und bei gleicher Gaskurve.');
+da('rearToeMore','Hintere Vorspur in kleiner Stufe erhöhen','toe','rearToe',
+ 'Beidseitig gleichen Einzelradwert an der Hinterachse setzen, nur eine kleine zulässige Stufe mehr Vorspur.',
+ 'Hintere Vorspur beeinflusst die Stabilisierung und die Schräglaufwinkel; kein automatischer Haftungsgewinn.',
+ 'Kann einen RWD-Drifter gegen ungewollte Spins beruhigen.',
+ 'Erhöht Scrub/Wärme, kann Rotation und Vortrieb verschlechtern.',
+ ['Einleitung: Heck ggf. ruhiger','Halten: Spinrisiko ggf. ↓','Ausgang: Temperatur prüfen'],
+ 'Vorher/nachher gleiche Kurve, Reifenwärme und Driftwinkel vergleichen.');
+da('casterLess','Nachlauf in kleiner Stufe reduzieren','caster','caster',
+ 'Positiven Nachlauf beidseitig messen; nur kleinen zulässigen Schritt weniger Nachlauf, Sturz und Maximalgegenlenkung erneut messen.',
+ 'Nachlauf beeinflusst Nachlaufmoment, Selbstzentrierung und lenkwinkelabhängigen Sturz. Wirkung kann bei RWD-Drift je Lenksystem die Richtung wechseln.',
+ 'Entwurfsversuch bei Schieben, nicht ohne Vergleich als allgemeiner Drift-Tipp einsetzen.',
+ 'Zu wenig Selbstlenkung oder ungünstiger Sturz bei Vollanschlag möglich.',
+ ['Einleitung: Selbstlenkung prüfen','Halten: Winkelverlauf prüfen','Übergang: Rückstellung prüfen'],
+ 'Beide Seiten gleich, nur Nachlauf ändern; bei gleichem Gyro und Winkel testen.');
+da('casterMore','Nachlauf in kleiner Stufe erhöhen','caster','caster',
+ 'Nachlaufwinkel symmetrisch und in kleiner Stufe vergrößern; Sturz bei großem Lenkeinschlag nachmessen.',
+ 'Mehr Nachlauf verändert Selbstlenkmoment und Sturz mit Lenkwinkel; kein pauschaler Grip-Schalter.',
+ 'Kann bei hektischem Auto mehr Selbstlenkcharakter bewirken – abhängig von Scrub und Lenkgeometrie.',
+ 'Kann den Vorderreifen bei Vollgegenlenkung ungünstig aufstellen und Reaktion beschleunigen.',
+ ['Einleitung: Charakter prüfen','Halten: Winkelkontakt prüfen','Übergang: Rücklenken prüfen'],
+ 'Nur Nachlauf ändern, Servo-EPA und Gyro unverändert.');
+da('frontTrackNarrow','Vordere Spurbreite geringfügig verkleinern','track','frontTrack',
+ 'Felgenoffset/Distanz links-rechts gleich ändern; Gesamtbreite, Freigang und Scrubradius vor/nachher messen.',
+ 'Die Entwurfsrichtung ist fahrzeugspezifisch. Eine schmalere Spur kann die seitliche Radlastverschiebung im Grundmodell ERHÖHEN; außerdem ändert sich der Lenkhebel/Scrubradius.',
+ 'Nur als kontrollierter RWD-Drift-Versuch bei Schieben, nicht als physikalische Gripregel.',
+ 'Mehr Radlastunterschied, Reifen-/Querlenkerkontakt und anderes Lenkgefühl möglich.',
+ ['Einleitung: Lenkhebel prüfen','Halten: Radlastwirkung gegenläufig','Ausgang: Freigang prüfen'],
+ 'Nur schmaler, wenn Bauweise und Breitenlimit es zulassen. Danach Vorderreifen auf Freigang prüfen.');
+da('frontTrackWide','Vordere Spurbreite geringfügig vergrößern','track','frontTrack',
+ 'Beidseitig dieselbe zulässige Distanz verwenden; Freigang bei Vollgegenlenkung prüfen.',
+ 'Mehr Spur reduziert im vereinfachten Grundmodell seitliche Radlastverschiebung, verändert aber Scrubradius und Lenkgeometrie; deswegen keine garantiert geringere Driftrotation.',
+ 'Als versuchsweise Änderung der Frontreaktion bei zu starkem Einlenken geeignet.',
+ 'Klassenbreite, Servobelastung und Schleifen können dagegen sprechen.',
+ ['Einleitung: ggf. ruhiger','Halten: Kontakt prüfen','Übergang: Scrub prüfen'],
+ 'Radbreite messen, anschließend beide Anschläge unter Last kontrollieren.');
+da('rearTrackLowNarrow','Hintere Spurbreite: bei langsamen Kurven etwas schmaler testen','track','rearTrack',
+ 'Nur bei nachgewiesenem Schieben in LANGSAMEN Driftkurven, symmetrisch schmaler montieren; Gesamtabmessung prüfen.',
+ 'Entwurfs-Hypothese: das Fahrgefühl kann sich bei niedriger Geschwindigkeit ändern. Schmalere Spur erhöht im einfachen Modell die seitliche Lastverlagerung und garantiert KEINEN Heckgripgewinn.',
+ 'Mehr Rotation auf enger Passage möglich, Gegenprobe nötig.',
+ 'Stabilität und Antriebstraktion können leiden; bei hohem Tempo andere Richtung möglich.',
+ ['Langsam: Rotation ggf. ↑','Kurvenmitte: Heckreserve prüfen','Ausgang: Vortrieb prüfen'],
+ 'Nur enge Driftkurve vergleichen; anschließend schnelle Kurve gesondert fahren.');
+da('rearTrackLowWide','Hintere Spurbreite: bei langsamen Kurven etwas breiter testen','track','rearTrack',
+ 'Bei Spin nur in LANGSAMEN Driftkurven hinten symmetrisch minimal breiter stellen, Freigang prüfen.',
+ 'Größere Spur verringert im einfachen Modell seitlichen Radlastunterschied; Lenk-/Reifenänderungen können den tatsächlichen Effekt beeinflussen.',
+ 'Könnte langsames Überrotieren beruhigen.',
+ 'Kann auf schnellen Kurven anders wirken; Breitenlimit kontrollieren.',
+ ['Einleitung: Balance testen','Langsam: Heck ggf. stabiler','Ausgang: Reifenkontakt prüfen'],
+ 'Nur langsamen Problemabschnitt testen; nicht als universelle Hochgeschwindigkeitsmaßnahme nutzen.');
+da('rearTrackHighWide','Hintere Spurbreite: bei schnellen Kurven etwas breiter testen','track','rearTrack',
+ 'Nur bei Schieben in SCHNELLEN Driftkurven beidseitig gleiche kleine Verbreiterung, Breite und Offset kontrollieren.',
+ 'Die Grafik nennt diese Richtung, obwohl das vereinfachte Lasttransfermodell allein nicht vorhersagt, dass dadurch Untersteuern abnimmt. Geometrie-/Schlupfeffekte können entscheidend sein.',
+ 'Prüfhypothese für das konkrete Chassis bei hohem Tempo.',
+ 'Auf langsamen Passagen gegenteiliger Effekt möglich; keine physikalische Erfolgsgarantie.',
+ ['Einleitung: Tempo trennen','Schnell: Balance testen','Ausgang: Freigang kontrollieren'],
+ 'Eine schnelle Kurve separat vor/nachher vergleichen; nicht gleichzeitig Offset vorne ändern.');
+da('rearTrackHighNarrow','Hintere Spurbreite: bei schnellen Kurven etwas schmaler testen','track','rearTrack',
+ 'Nur bei Spin in SCHNELLEN Driftkurven geringe, symmetrische Verschmälerung hinten prüfen.',
+ 'Dies ist eine Entwurfsrichtung und kann dem einfachen Lasttransfermodell entgegenlaufen: schmaler steigert dort den Lastunterschied. Nur tatsächliches Driftverhalten entscheidet.',
+ 'Mögliche Balanceänderung im hohen Tempo; Versuch nicht automatisch durchführen.',
+ 'Könnte die Heckstabilität verschlechtern. Nicht als erste Maßnahme bei gefährlichem Spin.',
+ ['Einleitung: Grip erst prüfen','Schnell: Balance beobachten','Ausgang: Heckreserve beachten'],
+ 'Mit reduziertem Tempo beginnen; einen kleinen Offsetschritt allein testen.');
+da('frontShockIn','Unteren vorderen Dämpferpunkt nach innen versetzen','shockMount','frontShock',
+ 'Nur wenn das Chassis die unteren Befestigungspositionen anbietet: Dämpfer unten eine Lochposition nach innen, Höhe und wirksamen Federweg wieder messen.',
+ 'Die Hebelübersetzung kann sich verändern und damit die wirksame Radfeder-/Dämpferrate. „Nach innen = mehr Grip“ ist keine allgemeingültige Gleichung.',
+ 'Versuchsrichtung aus der Grafik gegen Schieben.',
+ 'Ohne reale Anlenkung unbekannte Wirkung; niemals gleichzeitig obere Position verstellen.',
+ ['Einleitung: Federhebel prüfen','Halten: Frontbalance testen','Übergang: Federweg beachten'],
+ 'Nur unteren Punkt vorne ändern; Dämpferwinkel, Höhe und Freigängigkeit notieren.');
+da('frontShockOut','Unteren vorderen Dämpferpunkt nach außen versetzen','shockMount','frontShock',
+ 'Vorderen unteren Dämpferfuß eine erlaubte Position nach außen bewegen, restliche Aufhängung unverändert.',
+ 'Hebelübersetzung, Dämpferwinkel und Radfedersteifigkeit können sich gleichzeitig ändern; Einbaulage entscheidet.',
+ 'Versuch bei zu aggressivem Einleiten möglich, keine feste physikalische Richtung.',
+ 'Federweg, Kugelpfannen-Freigang, Bodenfreiheit und Balance prüfen.',
+ ['Einleitung: Reaktion prüfen','Halten: Kontakt prüfen','Übergang: Dämpferweg prüfen'],
+ 'Ausschließlich unteren Dämpferpunkt vorne ändern.');
+da('rearShockOut','Unteren hinteren Dämpferpunkt nach außen versetzen','shockMount','rearShock',
+ 'Hinteren Dämpfer nur unten eine zulässige Position nach außen montieren, Federweg/Höhe erneut messen.',
+ 'Das untere Loch beeinflusst Hebelverhältnis und wirksame Radrate; kein allgemeiner Traktionsschalter.',
+ 'Entwurfsrichtung bei Schieben; Rotation und Vortrieb getrennt beobachten.',
+ 'Heck kann schneller reagieren und Traktion verändern; Geometrie genau prüfen.',
+ ['Einleitung: Rotation beobachten','Halten: Heckbalance prüfen','Ausgang: Vortrieb beobachten'],
+ 'Nur HA-Dämpfer unten versetzen; VA unverändert.');
+da('rearShockIn','Unteren hinteren Dämpferpunkt nach innen versetzen','shockMount','rearShock',
+ 'Nur unteren hinteren Dämpferfuß eine Position nach innen, Ausfeder- und Einfederweg prüfen.',
+ 'Hebelverhältnis ändert sich abhängig vom Chassis; kann das Heck dynamisch anders arbeiten lassen.',
+ 'Entwurfsrichtung bei Spin; erst nach Reifen-/Elektronikcheck als Test.',
+ 'Kann zu weich, träge oder anschlaganfällig werden.',
+ ['Einleitung: Ruhe prüfen','Halten: Heckkontakt prüfen','Ausgang: Aufsetzen prüfen'],
+ 'Nur einen hinteren Montageparameter verändern.');
+da('rearShockStand','Hintere Dämpfer oben steiler stellen','shockMount','rearShock',
+ 'Obere HA-Aufnahme so ändern, dass der Dämpfer nachweislich steiler steht; unteren Punkt nicht bewegen, Höhe neu einstellen.',
+ 'Steiler kann das wirksame Rad-Feder-/Dämpferverhältnis erhöhen; Ansprechverhalten ist chassisabhängig.',
+ 'Versuchsrichtung bei schiebendem RWD-Drifter.',
+ 'Schnelleres Heck und weniger kontrollierbarer Driftwinkel möglich.',
+ ['Einleitung: Rotation prüfen','Halten: Heck ggf. reaktiver','Ausgang: Traktion prüfen'],
+ 'Nur obere HA-Position, vorher/nachher Winkel und Federweg dokumentieren.');
+da('rearShockLay','Hintere Dämpfer oben flacher stellen','shockMount','rearShock',
+ 'HA-Dämpfer oben eine Lochposition flacher, unten und Federrate unverändert; Fahrhöhe erneut einstellen.',
+ 'Flacherer Winkel senkt häufig die effektive Rate am Rad und verändert die Dynamik, ohne die Reifenreibung direkt zu bestimmen.',
+ 'Möglicherweise sanftere Rotation und mehr kontrollierbarer Heckkontakt.',
+ 'Mehr Wankwinkel, Gefahr des Aufsetzens und veränderte Balance möglich.',
+ ['Einleitung: Ruhe ggf. ↑','Halten: Heckreaktion glatter','Ausgang: Aufsetzen prüfen'],
+ 'Nur obere HA-Dämpferposition ändern, gleiche langsame und schnelle Kurve testen.');
+da('frontSpringSoft','Vordere Federn eine Härtestufe weicher testen','springs','frontSpring',
+ 'Vordere Federn paarweise um eine Stufe weicher tauschen; ursprüngliche Bodenfreiheit wiederherstellen.',
+ 'Weniger Radfedersteifigkeit kann Anfangsreaktion glätten, aber Wankwinkel und Sturzverlauf verändern; ein Frontgripgewinn folgt nicht automatisch.',
+ 'Entwurfsrichtung gegen Untersteuern; besonders Einleitung und Haltephase einzeln prüfen.',
+ 'Zu weiche Feder kann anschlagen oder Frontgrip so erhöhen, dass ein Spin wahrscheinlicher wird.',
+ ['Einleitung: ggf. sanfter','Halten: Vorderachsarbeit prüfen','Übergang: Wankwinkel beachten'],
+ 'Nur vordere Federn eine Stufe tauschen, Höhe und Gyro gleich.');
+da('frontSpringFirm','Vordere Federn eine Härtestufe härter testen','springs','frontSpring',
+ 'Vorne paarweise eine zulässige Federstufe härter wählen; Fahrhöhe auf Referenz einstellen.',
+ 'Erhöht wirksame Radfederrate (bei gleicher Montage) und verändert Wank-/Radlastverteilung. Kann Vorderachs-Haftungsreserve reduzieren, zugleich Reaktion beschleunigen.',
+ 'Test bei zu viel Einlenkrotation, aber kein pauschaler Spin-Fix.',
+ 'Härtere Front kann schieben oder durch Reifenhaken eine scharfe Reaktion erzeugen.',
+ ['Einleitung: Frontreserve ggf. ↓','Halten: Driftwinkel prüfen','Übergang: Reaktion ggf. schneller'],
+ 'Nur Federn VA ändern, danach gleiche Kurve vergleichen.');
+da('rearSpringFirm','Hintere Federn eine Härtestufe härter testen','springs','rearSpring',
+ 'Hinten paarweise eine Federstufe härter wechseln, alte Höhe wiederherstellen.',
+ 'Mehr hintere Wank-/Radfedersteifigkeit kann hintere Haftungsreserve reduzieren und Rotationsverhalten ändern.',
+ 'Entwurfsversuch gegen schiebendes Auto; Reaktion am Gas und in der Haltephase bewerten.',
+ 'Auf rutschigem Belag oder bei wenig Heckreserve kann daraus ein plötzlicher Spin werden.',
+ ['Einleitung: Rotation ggf. ↑','Halten: Heckreserve ggf. ↓','Ausgang: Vortrieb ggf. ↓'],
+ 'Nur hintere Federn, gleicher Gasaufbau; bei plötzlichem Heckverlust zurück.');
+da('rearSpringSoft','Hintere Federn eine Härtestufe weicher testen','springs','rearSpring',
+ 'Hinten paarweise weichere Federn einsetzen und Referenzhöhe wiederherstellen; Restfederweg kontrollieren.',
+ 'Geringere hintere Radfedersteifigkeit kann auf Unebenheiten den Bodenkontakt verbessern und die Balance verändern.',
+ 'Möglichkeit bei unkontrolliertem Spin durch zu geringe Heckreserve.',
+ 'Aufsetzen oder zu viel Wankweg können den Heckverlust verschärfen.',
+ ['Einleitung: Heck ggf. sanfter','Halten: Kontrolle ggf. ↑','Ausgang: Aufsetzen prüfen'],
+ 'Nur HA-Federn eine Stufe verändern; gleiches Tempo und gleiche Reifen.');
+da('frontDampThin','Vordere Dämpfung geringfügig reduzieren','damping','frontOil',
+ 'Gleiches Öl-System und gleiche Kolben: vorne eine kleine Stufe dünneres Öl wählen. Alternativ Kolbenfläche ändern, aber NICHT beides gleichzeitig.',
+ 'Weniger Dämpfungswiderstand beschleunigt Rad-/Chassisbewegung. Erzeugt keine feste Änderung des stationären Gesamtgrips.',
+ 'Entwurfsrichtung bei Schieben, insbesondere im Einleitungsübergang.',
+ 'Kann stärkeres Aufschaukeln und unruhige Driftwechsel verursachen.',
+ ['Einleitung: Dynamik schneller','Halten: statischer Grip unklar','Übergang: Wanken prüfen'],
+ 'Nur vorderes Öl wechseln, gleiche Temperatur, keine Kolbenänderung.');
+da('frontDampThick','Vordere Dämpfung geringfügig erhöhen','damping','frontOil',
+ 'Vorn eine kleine Stufe dickeres Öl derselben Vergleichsskala, Kolben gleich lassen.',
+ 'Erhöht Bewegungswiderstand und ändert vor allem den Lastaufbau beim Übergang.',
+ 'Entwurfsversuch bei zu scharfem Einleiten; mögliche ruhigere Transienten.',
+ 'Zu dick kann Räder auf Unebenheiten vom Boden trennen und hakelig wirken.',
+ ['Einleitung: langsamerer Aufbau','Halten: kein Dauergripbeweis','Übergang: evtl. ruhiger'],
+ 'Nur VA-Öl ändern, auf gleicher Strecke und Temperatur testen.');
+da('rearDampThick','Hintere Dämpfung geringfügig erhöhen','damping','rearOil',
+ 'Nur hinten eine kleine Stufe dickeres Öl; Kolben und Hinterfedern unverändert.',
+ 'Dämpfer ändern die Geschwindigkeit der Radlast- und Wankbewegung, nicht die stationär erforderliche Lastverschiebung.',
+ 'Entwurfsrichtung bei Schieben; Wirkung kann sich auf Einleitung/Wechsel beschränken.',
+ 'Pack/Unruhe oder schlechter Bodenkontakt auf Unebenheiten möglich.',
+ ['Einleitung: Übergang prüfen','Halten: kein statischer Gripbeweis','Ausgang: Lastaufbau prüfen'],
+ 'Gleiche Passage bei gleicher Temperatur, ausschließlich hinteres Öl ändern.');
+da('rearDampThin','Hintere Dämpfung geringfügig reduzieren','damping','rearOil',
+ 'Hinteres Öl geringfügig dünner wählen; Kolben und Feder unverändert.',
+ 'Erlaubt schnellere Federungsbewegung, verbessert aber nicht zwangsläufig Grip auf jedem Belag.',
+ 'Kann ein zu nervöses Heck in Übergängen beruhigen, wenn Pack/Bodenkontakt die Ursache sind.',
+ 'Schnellere Chassisbewegung kann ebenfalls Unruhe oder Aufsetzen verstärken.',
+ ['Einleitung: Reaktion prüfen','Halten: Bodenkontakt ggf. ↑','Übergang: Nachschwingen prüfen'],
+ 'Nur HA-Öl ändern; kleine identische Driftwechsel vergleichen.');
+da('frontPistonOpen','Vordere Kolben-Durchflussfläche leicht vergrößern','damping','frontPiston',
+ 'Vorne beide Kolben auf eine zur Ölviskosität passende, leicht größere Gesamtlochfläche ändern; Öl unverändert.',
+ 'Mehr Durchflussfläche bedeutet meist geringere Dämpferkraft. Lochzahl ohne Durchmesser sagt allein wenig.',
+ 'Alternative zu dünnerem Öl bei schiebendem Auto; nicht zusätzlich zum Ölwechsel.',
+ 'Blasen/Abweichungen können jede Wirkung überlagern.',
+ ['Einleitung: schnelleres Ansprechen','Halten: Wirkung unklar','Wechsel: Pack ggf. ↓'],
+ 'Nur vordere Kolben ändern, Öl vorher/nachher gleich.');
+da('frontPistonClose','Vordere Kolben-Durchflussfläche leicht verkleinern','damping','frontPiston',
+ 'Vorne Kolben mit kleinerer Gesamtlochfläche einsetzen; übriges Öl unverändert.',
+ 'Verringert den Öl-Durchfluss und erhöht meist die Bewegungsdämpfung.',
+ 'Alternative zu dickerem Öl bei zu hektischem Einlenken.',
+ 'Zu starke Dämpfung verschlechtert Bodenkontakt und kann abrupten Gripverlust fördern.',
+ ['Einleitung: ggf. gedämpfter','Halten: Grip nicht berechnet','Wechsel: Pack ggf. ↑'],
+ 'Nur Kolben vorne, Öl beibehalten.');
+da('rearPistonClose','Hintere Kolben-Durchflussfläche leicht verkleinern','damping','rearPiston',
+ 'Hinten beide Dämpfer mit geringfügig weniger Gesamtlochfläche, Öl unverändert.',
+ 'Erhöht meist die hintere Dämpfungswirkung während Bewegung, nicht statischen Druck.',
+ 'Alternative zum dickeren Öl gemäß Entwurfsrichtung gegen Schieben.',
+ 'Zu viel Pack kann einseitig Radkontakt verlieren lassen.',
+ ['Einleitung: Übergang prüfen','Halten: Haftung nicht vorhersagbar','Ausgang: Reaktion prüfen'],
+ 'Nur hintere Kolben, keine gleichzeitige Öländerung.');
+da('rearPistonOpen','Hintere Kolben-Durchflussfläche leicht vergrößern','damping','rearPiston',
+ 'Hinten beide Kolben mit etwas mehr Durchflussfläche, Öl sonst unverändert.',
+ 'Reduziert meist den dynamischen Widerstand, kann Stöße und Bewegung anders übertragen.',
+ 'Alternative zu dünnerem Öl bei überaggressivem Heck.',
+ 'Mehr Bewegung und Aufsetzgefahr, keine pauschale Gripgarantie.',
+ ['Einleitung: Dynamik prüfen','Halten: Hinterradkontakt prüfen','Wechsel: Pack ggf. ↓'],
+ 'Nur hintere Kolben und gleiche Ölfüllung.');
+da('frontLinkLong','Vordere Sturzstrebe länger / eher parallel zum unteren Querlenker','rollcentre','frontCamberLink',
+ 'Ausgangslängen und Anlenkpunkte vermessen. Nur wenn Montage und Winkel bekannt sind, Strebe geringfügig verlängern oder paralleler zum unteren Arm stellen – NICHT beides auf einmal.',
+ 'Sturzänderung, momentanes Rollzentrum und Rollzentrumwanderung hängen von mehreren Drehpunkten ab. Eine längere/parallele Strebe senkt das Rollzentrum NICHT bei jedem Chassis.',
+ 'Entwurfsrichtung bei Untersteuern – reine Geometrie-Testhypothese.',
+ 'Sturz bei Einfederung und Vollgegenlenkung kann sich unerwartet ändern; geometrisch nachmessen.',
+ ['Einleitung: Sturzverlauf prüfen','Halten: Frontbalance messen','Übergang: Lenkgeometrie prüfen'],
+ 'Nur eine Strebenvariable ändern; Skizze/Messung des tatsächlichen Sturzverlaufs vorher/nachher.');
+da('frontLinkShort','Vordere Sturzstrebe kürzer / Anlenkwinkel ändern','rollcentre','frontCamberLink',
+ 'Nur falls gemessene Geometrie bekannt: Strebe in kleinem Schritt verkürzen ODER genau einen Anlenkpunkt ändern.',
+ 'Ändert abhängig von Pivot-Punkten Sturzverlauf und Rollzentrum. „Kürzer = höher“ ist nicht allgemein gültig.',
+ 'Entwurfsrichtung bei überaggressiver Vorderachse, vor Umbau Geometriehypothese prüfen.',
+ 'Beim Vollgegenlenken kann die Lauffläche ungünstig stehen; unsymmetrische Änderungen vermeiden.',
+ ['Einleitung: Winkel prüfen','Halten: Sturzverlauf prüfen','Wechsel: Reifenkontakt prüfen'],
+ 'Vorher/nachher Rollzentrum/Sturzänderung vermessen; nur eine Variable.');
+da('diffTight','Einstellbares Hinter-Kugeldifferenzial geringfügig stärker sperren','diff','rearDiff',
+ 'AUSSCHLIESSLICH bei bekanntem, einstellbarem Kugeldiff: Ausgangswert und Slip gemäß Hersteller prüfen. Kleine zulässige Verstellung Richtung mehr Sperrwirkung; nicht blind klemmen.',
+ 'Höhere Sperrwirkung koppelt Raddrehzahlen stärker. Das kann Traktions- und Rotationsverhalten beim Gasgeben verändern; andere Diff-Typen reagieren anders.',
+ 'Versuchsrichtung aus der Grafik gegen Schieben, nur beim passenden Kugeldiff.',
+ 'Zu fest beschädigt Kugeldiff oder macht Lastwechsel abrupt; Spool bietet diese Einstellung nicht.',
+ ['Einleitung: Sperrung prüfen','Halten: Rotation prüfen','Ausgang: beide Räder prüfen'],
+ 'Nur Diff-Einstellung, nach Herstellergrenze und ohne gleichzeitige Gaskurvenänderung.');
+da('diffLoose','Einstellbares Hinter-Kugeldifferenzial geringfügig weniger sperren','diff','rearDiff',
+ 'Nur ein korrekt funktionierendes Kugeldiff in kleiner, erlaubter Stufe lockern; Slip-Test nach Hersteller unbedingt durchführen.',
+ 'Weniger Sperrung erlaubt mehr Differenzdrehzahl und verändert das Antriebs-Giermoment; kein garantierter Anti-Spin-Effekt.',
+ 'Grafik-Versuch bei überaggressivem Heck, nur falls nicht bereits rutschend.',
+ 'Zu locker: Riemen-/Kugelverschleiß, einseitiges Durchdrehen, schlechter Vortrieb.',
+ ['Einleitung: Differenzwirkung prüfen','Halten: Rotation beobachten','Ausgang: Vortrieb kontrollieren'],
+ 'Nur Kugeldiff, nicht Spool und nicht pauschal Öldiff; bei einseitigem Durchdrehen abbrechen.');
+
+// Öl- und Kugeldifferenzial unterscheiden: keine Schraubenanweisung an einem Öldiff.
+da('diffGearThick','Hinteres Öldifferenzial: etwas höhere Ölviskosität prüfen','diff','rearDiff',
+ 'Nur bei dokumentiert einstellbarem Öldifferenzial und Herstellerfreigabe: eine kleine Stufe höhere Viskosität derselben Öl-Skala wählen. Füllstand, Dichtungen und Temperatur beachten.',
+ 'Zähere Flüssigkeit hemmt die Drehzahldifferenz im laufenden Betrieb je nach Diff-Bauart stärker, ist aber keine feste Sperre und nicht gleichbedeutend mit dem Festziehen eines Kugeldiffs.',
+ 'Bedingte Versuchsrichtung gegen Schieben, falls das bisherige Diff die Ursache ist.',
+ 'Kann das Auto unter Gas schärfer machen oder Vortrieb/Driftwinkel verschlechtern. Keine ungesicherten cSt-Standardwerte annehmen.',
+ ['Einleitung: Kopplung prüfen','Halten: Balance beobachten','Ausgang: gleichmäßiger Antrieb?'],
+ 'Nur Ölviskosität im hinteren Öldiff ändern; gleiche Temperatur und Gaskurve beibehalten.');
+da('diffGearThin','Hinteres Öldifferenzial: etwas geringere Ölviskosität prüfen','diff','rearDiff',
+ 'Nur bei einem abstimmbaren Öldifferenzial: kleine Stufe dünneres zugelassenes Öl derselben Marke/Skala. Sonst nichts verändern.',
+ 'Geringere viskose Kopplung erlaubt unter Drehzahldifferenz leichter unterschiedliche Hinterraddrehzahlen. Resultat hängt von Bauweise, Grip und Gas ab.',
+ 'Bedingte Entwurfsrichtung bei unkontrollierter Rotation, nur wenn Diff-Verhalten tatsächlich auffällig ist.',
+ 'Zu wenig Kopplung kann ein Rad hochdrehen lassen und kontrollierbaren Vortrieb mindern.',
+ ['Einleitung: Differenzwirkung prüfen','Halten: Heckreaktion prüfen','Ausgang: Radspin prüfen'],
+ 'Eine Öl-Stufe separat testen; Vortrieb und Driftstabilität beobachten.');
+const D_MATRIX=[
+ ['Bodenfreiheit vorne','Verringern','Erhöhen'],['Bodenfreiheit hinten','Erhöhen','Verringern'],
+ ['Ackermann','Winkeldifferenz vergrößern*','Winkeldifferenz verkleinern*'],
+ ['Vordere Spur','Mehr Nachspur','Weniger Nachspur'],['Hintere Spur','Weniger Vorspur','Mehr Vorspur'],
+ ['Nachlauf','Weniger Winkel*','Mehr Winkel*'],['Spurbreite vorne','Verringern*','Vergrößern*'],
+ ['Spurbreite hinten – langsame Kurve','Verringern*','Vergrößern*'],['Spurbreite hinten – schnelle Kurve','Vergrößern*','Verringern*'],
+ ['Dämpferaufnahme vorne, unten','Nach innen*','Nach außen*'],['Dämpferaufnahme hinten, unten','Nach außen*','Nach innen*'],
+ ['Dämpferaufnahme hinten, oben','Dämpfer steiler*','Dämpfer flacher*'],
+ ['Federn vorne','Weicher*','Härter*'],['Federn hinten','Härter*','Weicher*'],
+ ['Dämpfung vorne','Dünneres Öl oder größere Kolbenlöcher – einzeln*','Dickeres Öl oder kleinere Kolbenlöcher – einzeln*'],
+ ['Dämpfung hinten','Dickeres Öl oder kleinere Kolbenlöcher – einzeln*','Dünneres Öl oder größere Kolbenlöcher – einzeln*'],
+ ['Vordere Sturzstrebe / Rollgeometrie','Länger und/oder paralleler zum Querlenker*','Kürzer oder Anlenkwinkel ändern*'],
+ ['Hinteres Differenzial','Mehr Sperrwirkung – nur passender Diff-Typ*','Weniger Sperrwirkung – nur passender Diff-Typ*']
+];
+const D_CASES={
+ under:['baseline','steerCheck','throttleSmooth','frontToeOut','rearToeLess','frontSpringSoft','rearSpringFirm','frontRideDown','rearRideUp','ackMore','casterLess','frontTrackNarrow','rearTrackLowNarrow','rearTrackHighWide','frontShockIn','rearShockOut','rearShockStand','frontDampThin','rearDampThick','frontPistonOpen','rearPistonClose','frontLinkLong','diffTight','diffGearThick'],
+ over:['baseline','steerCheck','gyroCheck','throttleSmooth','rearToeMore','frontToeLess','rearSpringSoft','frontSpringFirm','rearRideDown','frontRideUp','ackLess','casterMore','frontTrackWide','rearTrackLowWide','rearTrackHighNarrow','frontShockOut','rearShockIn','rearShockLay','frontDampThick','rearDampThin','frontPistonClose','rearPistonOpen','frontLinkShort','diffLoose','diffGearThin'],
+ straighten:['baseline','steerCheck','gyroCheck','throttleSmooth','frontToeOut','ackMore','frontSpringSoft','rearToeLess','rearSpringFirm','casterLess','frontDampThin'],
+ angle:['steerCheck','baseline','gyroCheck','frontToeOut','ackMore','casterLess','frontLinkLong','frontTrackNarrow','frontSpringSoft','rearToeLess','throttleSmooth'],
+ transition:['baseline','gyroCheck','gyroGainDown','steeringExpo','steerCheck','frontDampThick','rearDampThin','rearSpringSoft','rearShockLay','frontToeLess','ackLess'],
+ oscillation:['gyroCheck','gyroGainDown','steerCheck','baseline','steeringExpo','frontToeLess','ackLess'],
+ drive:['diffIdentify','throttleSmooth','baseline','rearToeMore','rearSpringSoft','rearShockLay','rearDampThin','diffTight','diffGearThick'],
+ asymmetric:['baseline','steerCheck','gyroCheck','frontToeLess','rearToeMore']
+};
+const D_ISSUE_TEXT={under:'Das Auto schiebt oder lässt sich nicht in einen kontrollierten Drift einleiten.',over:'Das Heck dreht stärker ein als kontrollierbar und das Auto droht sich zu drehen.',straighten:'Das Auto richtet sich während des Drifts auf.',angle:'Der erreichbare Drift- oder Gegenlenkwinkel reicht nicht.',transition:'Der Driftwechsel ist zu hektisch.',oscillation:'Die Lenkung pendelt.',drive:'Der Vortrieb ist ungleichmäßig oder schlecht dosierbar.',asymmetric:'Links/rechts ist das Verhalten asymmetrisch.'};
+const D_HARD=['ackMore','ackLess','casterLess','casterMore','frontTrackNarrow','rearTrackLowNarrow','rearTrackHighWide','rearTrackHighNarrow','frontLinkLong','frontLinkShort'];
+function dSuitable(id){const a=D_ACT[id];if(!a||!dAvailable(a.feature))return false;const speed=$('dSpeed').value,diff=$('dDiff').value,gyro=$('dGyro').value,issue=$('dIssue').value,surf=$('dSurface').value;
+ if(id==='rearTrackLowNarrow'||id==='rearTrackLowWide')return speed==='low';
+ if(id==='rearTrackHighWide'||id==='rearTrackHighNarrow')return speed==='high';
+ if(id==='diffTight'||id==='diffLoose')return diff==='ball';
+ if(id==='diffGearThick'||id==='diffGearThin')return diff==='gear';
+ if(id==='diffIdentify'&&issue==='drive')return true;
+ if(id==='gyroGainDown'&&gyro!=='on')return false;
+ if(id==='frontTrackNarrow'&&surf==='bumpy')return false;
+ if(id==='rearSpringFirm'&&['over','transition','oscillation'].includes(issue))return false;
+ if(id==='frontSpringFirm'&&surf==='bumpy')return false;
+ return true;
+}
+function dFindKeys(){let issue=$('dIssue').value,keys=[...(D_CASES[issue]||D_CASES.under)];
+ if(issue==='under'&&$('dPhase').value==='exit')keys=['throttleSmooth','diffIdentify','baseline','rearToeLess','frontToeOut',...keys];
+ if(issue==='over'&&$('dPhase').value==='exit')keys=['throttleSmooth','diffIdentify','baseline','rearToeMore','rearSpringSoft',...keys];
+ if(issue==='under'&&$('dSpeed').value==='low')keys=['baseline','steerCheck','rearTrackLowNarrow',...keys];
+ if(issue==='under'&&$('dSpeed').value==='high')keys=['baseline','steerCheck','rearTrackHighWide',...keys];
+ if(issue==='over'&&$('dSpeed').value==='low')keys=['baseline','steerCheck','rearTrackLowWide',...keys];
+ if(issue==='over'&&$('dSpeed').value==='high')keys=['baseline','steerCheck','rearTrackHighNarrow',...keys];
+ if(issue==='drive'&&$('dDiff').value==='unknown')keys=['diffIdentify','baseline','throttleSmooth',...keys];
+ if(issue==='drive'&&$('dDiff').value==='spool')keys=['throttleSmooth','baseline','rearToeMore','rearSpringSoft',...keys];
+ if(issue==='oscillation'&&$('dGyro').value==='on')keys=['gyroCheck','gyroGainDown',...keys];
+ if($('dSurface').value==='bumpy')keys=['baseline','steerCheck','rearSpringSoft','rearDampThin',...keys];
+ const area=$('dArea').value;
+ keys=[...new Set(keys)].filter(dSuitable);
+ if(area!=='auto'&&area!=='all')keys=keys.filter(k=>D_ACT[k].group===area);
+ return keys;
+}
+function dRank(keys){let checked=$('dChecked').value==='yes',issue=$('dIssue').value;
+ const direct={oscillation:'gyroCheck',angle:'steerCheck',transition:'gyroCheck',drive:'diffIdentify',asymmetric:'baseline',straighten:'steerCheck'}[issue];
+ return keys.map((id,index)=>{
+ const a=D_ACT[id],g=a.group;
+ let tier=g==='checks'?0:['toe','ride','electronics'].includes(g)?1:['springs','damping','shockMount'].includes(g)?2:3;
+ if((id==='diffIdentify'&&$('dDiff').value!=='unknown'&&issue!=='drive')||(checked&&['baseline','steerCheck'].includes(id)&&id!==direct))tier=4;
+ if(id==='gyroCheck'&&$('dGyro').value==='off'&&issue!=='oscillation')tier=4;
+ // Der eindeutige Fehlerhinweis hat Vorrang, ohne eine Erfolgswahrscheinlichkeit vorzutäuschen.
+ if(id===direct)tier=0;
+ if(issue==='drive'&&$('dDiff').value==='unknown'&&id==='diffIdentify')tier=0;
+ const stage=['Ursache prüfen','Einfacher Versuch','Feder-/Dämpferversuch','Vertiefte Geometrie / Antrieb','Bereits geprüft / später'][tier];
+ const reason=id===direct?'Das ausgewählte Problem deutet zunächst auf diese Prüfung.':tier===4?'Bereits als geprüft markiert oder bei dieser Ausstattung nachrangig.':g==='checks'?'Ursache eingrenzen, bevor die Fahrwerksbalance verändert wird.':tier===3?'Chassisabhängig: erst nach Basisprüfung und Messung als Einzelversuch.':g==='electronics'?'Einfacher elektronischer Versuch ohne Umbau der Fahrwerksgeometrie.':g==='toe'?'Kleine, messbare Spuränderung; Wirkung am Gegenlenkwinkel kontrollieren.':'Passende Entwurfsrichtung, aber erst als getrennten A/B-Versuch prüfen.';
+ return {id,index,tier,stage,reason};
+ }).sort((a,b)=>a.tier-b.tier||a.index-b.index).map((x,i)=>({...x,position:i+1}));
+}
+function dEffectTiles(e){return `<div class="phase-impact">${e.map((x,i)=>`<div class="phase-tile"><span class="phase-index">${['01 · EINLEITUNG','02 · DRIFT HALTEN','03 · AUSGANG / WECHSEL'][i]}</span><strong>${esc(x)}</strong></div>`).join('')}</div>`}
+function dMarkup(a,m){return `<article class="recommend coach-primary"><div class="priority-head"><span class="priority-label">Priorität ${m.position} · ${esc(m.stage)}</span><span class="priority-label secondary">${esc(D_AREA[a.group]||a.group)}</span></div><div class="priority-reason"><strong>Warum diese Reihenfolge?</strong> ${esc(m.reason)}</div><div class="kicker">2WD-RWD Drift · ${esc(a.condition)} · nur ein Parameter</div><h2>${esc(a.title)}</h2><h3 style="margin-top:18px">Erwartete Wirkung beim Driften</h3>${dEffectTiles(a.effects)}<p class="hint">Qualitative Testrichtungen; kein garantierter Driftwinkel und keine berechneten Gripwerte.</p><div class="coach-columns"><div><h3>1 · Was genau ändern?</h3><p>${esc(a.how)}</p><h3>2 · Wirkmechanismus</h3><p>${esc(a.physics)}</p><h3>3 · Worauf achten?</h3><p>${esc(a.expect)}</p></div><div class="effectpanel"><h3>Risiken &amp; Grenzen</h3><div class="note warning">${esc(a.trade)}</div><p class="hint">Bei Dämpferloch, Ackermann, Spurbreite und Geometrie tatsächlichen Einbau prüfen.</p></div></div><div class="note success"><strong>Kontrollierter Drift-Test:</strong> ${esc(a.test)}</div></article>`}
+function dReadFields(){for(const [id,key] of [['dIssue','issue'],['dPhase','phase'],['dSpeed','speed'],['dSurface','surface'],['dDiff','diff'],['dGyro','gyro'],['dArea','area'],['dChecked','checked'],['dPreset','preset']])driftState[key]=$(id).value;driftState.notes=$('dNotes').value.slice(0,300);dSave()}
+function dDiagnose(){dReadFields();const issue=driftState.issue,rank=dRank(dFindKeys());
+ $('dDiagnosisIntro').innerHTML=`<strong>2WD-Drift-Diagnose:</strong> ${esc(D_ISSUE_TEXT[issue])} Phase: ${esc($('dPhase').selectedOptions[0].textContent)}. Tempo: ${esc($('dSpeed').selectedOptions[0].textContent)}. Differenzial: ${esc($('dDiff').selectedOptions[0].textContent)}.`;
+ if(!rank.length){$('dResults').innerHTML=`<div class="card"><h2>Keine passende und bestätigte Maßnahme verfügbar</h2><p>Wähle zunächst die wirklichen Einstellmöglichkeiten deines Fahrzeugs, prüfe den Differenzialtyp und ggf. die Geschwindigkeitsklasse. Die Tabelle allein reicht nicht für eine sichere Empfehlung.</p><button id="dShowChecks" class="btn primary" type="button">Zur Grundprüfung wechseln</button></div>`;$('dShowChecks').onclick=()=>{$('dArea').value='checks';dDiagnose()};return;}
+ let [main,...rest]=rank;
+ const diffWarn=$('dDiff').value==='unknown'?'<p><strong>Diff-Typ noch unbekannt:</strong> Kein Sperrungsumbau wird vorgeschlagen. Bei Vortriebsproblemen erst Art und Funktion feststellen.</p>':$('dDiff').value==='spool'?'<p><strong>Starrachse erkannt:</strong> Die Tabellenzeile „Differenzial festziehen/lockern“ entfällt; an einem Spool existiert diese Einstellschraube nicht.</p>':'';
+ $('dResults').innerHTML=`<div class="drift-note"><strong>Hinweis zur Grafik:</strong> Sie nennt Richtungen für Unter-/Übersteuern im Drift. Je nach Belag, Gyro, Driftwinkel und Fahrwerk können sie umkehren. Der erste Schritt ist eine begründete <em>Prüf- und Versuchsreihenfolge</em>, keine Erfolgswertung.${diffWarn}</div><div class="drift-priority"><strong>Priorisiert:</strong> 1. Fehler und Elektronik klären → 2. kleine, messbare Spur-/Senderkorrektur → 3. Federn und Dämpfer → 4. Winkelgeometrie und Differenzial. Eine bekannte Ursache kann die Reihenfolge anpassen. Beim gezielten Bauteilfilter bleiben die Vorprüfungen trotzdem nötig.</div>${dMarkup(D_ACT[main.id],main)}<div class="card drift-list"><div class="sectionhead"><h2>Weitere passende Drift-Einzelversuche</h2><span class="pill mint">${rank.length} Optionen</span></div><p class="muted">Wähle einen Versuch aus. Nach dessen Test erst die nächste Einstellung ändern. Nicht gleichzeitig Öl und Kolben, obere und untere Dämpferaufnahme oder Vorder- und Hinterachse verändern.</p><div class="alternative-list">${rest.map(m=>`<button type="button" class="alternative" data-dnext="${esc(m.id)}"><span class="alt-top"><span class="alt-number">${m.position}</span><strong>${esc(D_ACT[m.id].title)}</strong></span><small>${esc(m.stage)} · ${esc(D_AREA[D_ACT[m.id].group]||D_ACT[m.id].group)}</small><span class="alt-reason">${esc(m.reason)}</span></button>`).join('')||'<p class="muted">Keine weiteren passenden Bauteile ausgewählt.</p>'}</div></div>`;
+ $('dResults').querySelectorAll('[data-dnext]').forEach(btn=>btn.addEventListener('click',()=>{const m=rank.find(x=>x.id===btn.dataset.dnext);if(!m)return;const old=$('dResults').querySelector('.coach-primary');if(old)old.outerHTML=dMarkup(D_ACT[m.id],m);$('dResults').querySelectorAll('[data-dnext]').forEach(x=>x.classList.toggle('selected',x.dataset.dnext===m.id));}));
+}
+const DRIFT_LEX=[
+ ['2WD-RWD Drift: Ziel','Grundlage','Heckantrieb: Beide Antriebsräder erzeugen Längs- und Seitenkräfte. Mit Gegenlenkung, Gas und ggf. Gyro entsteht ein kontrollierter Schlupfzustand.','Unter-/Übersteuern im Drift beschreibt hier die kontrollierbare Driftlinie und den Winkel – nicht den maximalen Grip eines Onroad-Rennwagens.'],
+ ['Reifen und Streckenbelag','Grundlage','P-Tile/PVC, Teppich oder Asphalt benötigen passende Reifen und reproduzierbaren Grip. Reifen mit unterschiedlichem Verschleiß können Seitenunterschiede verursachen.','Nicht gleichzeitig Reifen und Fahrwerksgeometrie verändern. Zulässige Reifen nach Streckenreglement prüfen.'],
+ ['Ackermann im Drift','Lenkgeometrie','Unterschied des Innen-/Außenradwinkels bei einem angegebenen Lenkeinschlag; der Unterschied kann sich am großen Gegenlenkwinkel anders verhalten als nahe Geradeaus.','„Mehr Ackermann-Winkel“ aus dem Entwurf ist ohne Definition und Messposition mehrdeutig. Radwinkel am tatsächlichen Gegenlenkwinkel prüfen.'],
+ ['Gyro','Elektronik','Korrekturrichtung, Empfindlichkeit und Servogeschwindigkeit beeinflussen das Gegenlenken; zu hohe Verstärkung kann pendeln.','Korrekturrichtung zuerst mit frei drehenden Rädern prüfen. Gyro-Einstellung nie als Fahrwerks-Gripänderung bezeichnen.'],
+ ['Spur bei 2WD Drift','Geometrie','Mehr vordere Nachspur und weniger hintere Vorspur können eine Testhypothese für mehr Rotation sein; für beruhigendes Heck umgekehrt.','Statische Spur ist nicht dasselbe wie Ackermann. Links/rechts symmetrisch messen; kein allgemeingültiger Wert.'],
+ ['Federn und Dämpfer','Federung','Federn bestimmen zusammen mit dem Hebelverhältnis die Radfedersteifigkeit. Öl und Kolben beeinflussen vor allem die Bewegungsgeschwindigkeit.','Grafikregeln zu Öl und Federn sind Testrichtungen: keine universelle Zuordnung zu Unter-/Übersteuern, kein Öl- und Kolbenwechsel gleichzeitig.'],
+ ['Sturzstrebe / Rollzentrum','Geometrie','Obere Querlenker-/Sturzstrebengeometrie verändert Sturzänderung und den geometrischen Kräftepfad.', 'Strebe länger oder paralleler stellt Rollzentrum nicht bei jedem Chassis in dieselbe Richtung. Vorher/nachher Winkel und Drehpunkte prüfen.'],
+ ['Differenzial hinten','RWD Antrieb','Spool/Starrachse, Kugeldiff und Öldiff verhalten sich unterschiedlich. Die Entwurfszeile „festziehen/lockern“ gilt höchstens für einen passenden verstellbaren Diff-Typ.','Eine Starrachse kann nicht fester/lockerer gestellt werden. Kugeldiff nicht blind festklemmen.'],
+ ['Hintere Spurbreite','Geschwindigkeit','Die Entwurfsübersicht unterscheidet ausdrücklich langsame und schnelle Kurven mit zum Teil entgegengesetzter Richtung.','Das einfache Lasttransfermodell garantiert keinen Driftvorteil. Bei unbekannter Geschwindigkeit keine Hinterspur-Versuche aus dieser Regel.']
+];
+function renderDiscipline(){let drift=discipline==='drift';$('discipline').value=discipline;$('onroadPanel').hidden=drift;$('driftPanel').hidden=!drift;
+ $('coachTitle').textContent=drift?'2WD Drift – Setup-Coach':'Setup-Coach für Einsteiger';
+ $('coachIntro').textContent=drift?'Eigener deutschsprachiger Setup-Coach für heckgetriebene 2WD-Drifter. Wähle Driftproblem, Phase, Kurventempo, Untergrund, Differenzial und vorhandene Einstellungen. Du erhältst priorisierte Einzelversuche mit Wirkmechanismus und Nebenwirkungen.':'Der Assistent trennt Snap Oversteer von gleichmäßigem Übersteuern und unterscheidet beim Kippen vier unterschiedliche Ursachen, bevor er Änderungen vorschlägt. Die Reihenfolge berücksichtigt Auslöser, Aufwand und mögliche Nebenwirkungen.';
+ $('disciplineHeader').textContent=drift?'RC Drift / 2WD Heckantrieb · Setup-Coach':'RC Tourenwagen / Onroad · Setup-Coach';
+ document.querySelector('.subtitle').textContent=drift?'2WD-Drift · v5.0':'Fahrzeugdynamik · v5.0';
+ $('driftPhysicsNote').hidden=!drift;
+ if(selectedTab==='lexicon')renderLexicon();
+}
+function dInit(){for(const [id,key] of [['dIssue','issue'],['dPhase','phase'],['dSpeed','speed'],['dSurface','surface'],['dDiff','diff'],['dGyro','gyro'],['dArea','area'],['dChecked','checked']]){
+ const el=$(id);if([...el.options].some(x=>x.value===driftState[key]))el.value=driftState[key];
+ el.addEventListener('change',()=>{dReadFields();if($('dResults').innerHTML)dDiagnose()});}
+ $('dNotes').value=driftState.notes; $('dNotes').addEventListener('input',dReadFields);
+ dRenderAbilities();$('dPreset').addEventListener('change',()=>{driftState.preset=$('dPreset').value;driftState.flags=driftState.preset==='race'?DRIFT_CAPABILITIES.map(x=>x[0]):driftState.preset==='custom'?[...driftState.flags]:[];dSave();dRenderAbilities();if($('dResults').innerHTML)dDiagnose()});
+ $('dDiagnose').addEventListener('click',dDiagnose);
+ $('dReset').addEventListener('click',()=>{driftState={...DRIFT_DEFAULT,flags:[]};dSave();for(const [id,key] of [['dIssue','issue'],['dPhase','phase'],['dSpeed','speed'],['dSurface','surface'],['dDiff','diff'],['dGyro','gyro'],['dArea','area'],['dChecked','checked']])$(id).value=DRIFT_DEFAULT[key];$('dNotes').value='';dRenderAbilities();$('dResults').innerHTML='';$('dDiagnosisIntro').textContent='Drift-Eingaben zurückgesetzt. Problem, Geschwindigkeit und Ausstattung wählen.';});
+ $('driftMatrixBody').innerHTML=D_MATRIX.map(([name,under,over])=>`<tr><td>${esc(name)}</td><td>${esc(under)}</td><td>${esc(over)}</td></tr>`).join('');
+ $('discipline').addEventListener('change',()=>{discipline=$('discipline').value;try{localStorage.setItem(MODE_STORE,discipline)}catch{};renderDiscipline()});
+ renderDiscipline();
+}
+
+state=load();renderAbilities();initDiagnosis();renderLexicon();initPhysics();dInit();
 </script></body></html>
